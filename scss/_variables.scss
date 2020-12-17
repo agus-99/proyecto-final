@@ -1,0 +1,17 @@
+$widthMax: 100%;
+$fontFamily: 'Oswald', sans-serif ; 
+$size: 70px; 
+
+@mixin transform ($textTransform , $fontSize)
+ {
+    text-transform: $textTransform  $fontSize;
+  }
+  
+@mixin sizes ($width, $heigth)
+{
+    width: $width;
+    height: $heigth;
+}
+
+
+

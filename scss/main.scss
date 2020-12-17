@@ -1,0 +1,206 @@
+@import "colors" ;
+@import "variables" ;
+
+
+
+body { font-family: $fontFamily;
+       height: 1000px ;
+       padding: 0px;
+       margin: 0px;
+    }
+
+.main__margin { margin: 50px;
+               padding: 10px;
+
+}
+.section__img{ @include sizes (1000px, 500px);
+               position: relative;
+               margin: 25px;
+            }
+.background { background-color: $backColor;
+
+}
+
+nav {display: flex;
+    @include sizes (100%, 50px) ;
+    @include transform (none, 18px);
+    text-decoration: none;                
+    align-items: center;
+    justify-content: center;
+     ul{ letter-spacing: 0,8px;
+         word-spacing: 10px;
+         li{ display: inline-block;
+             padding: 4px;
+             margin: 5px;
+             a{ text-align: center;
+                 list-style-type: none;
+                text-decoration: none;
+                color: $white;
+                font-family: $fontFamily;
+
+            }
+        }
+    }
+  }
+
+p { color: $letterColor;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: $fontFamily;
+    text-align: left;
+    @include transform(capitalize, 15px); 
+    text-decoration: none;
+    letter-spacing: 0.5;
+    word-spacing: 1px;
+    line-height: 15px;
+    display: inline;
+    margin: 20px;
+    padding:10px;
+    border: transparent;
+}
+
+h1 {@include transform (capitalize, 400px); 
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color:#0b4b2e;
+    letter-spacing: normal;
+    word-spacing: 10px;
+
+}
+
+.container__h1 { position: relative;
+    .center{ position: absolute;                     
+             top: 79%;
+        .h1__rosa{ font-family: 'Bebas Neue', cursive;
+                   letter-spacing: normal;  
+                   color: $pink ;
+                   font-size: 65px;
+                   padding: 14px;
+                   margin: 0px;
+                   background-color:  $colorlogo;
+                   align-items: center;
+            }
+        }
+    }
+    
+.recuadro__h1 { background-color: #dbdbdb;
+                margin: 40px;
+                padding: 20px;
+                justify-content: center;
+                top: auto;
+                
+            
+                 }   
+h2 {text-align: center;
+    font-family: $fontFamily;
+    font-size: 40px;
+    line-height: normal;
+    @include transform(capitalize, 40px);
+    color: $h2Color;
+    letter-spacing: normal;
+    word-spacing: normal;
+    margin: 30px;
+    padding: 5px;
+            }
+h3 {font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    line-height: normal;
+    @include transform(capitalize, 25px);
+    color:darkorange;
+    text-align: center;
+    margin: 8px;
+    padding: 2px;
+    }
+.h3__underline { text-decoration: underline;
+}
+h4  { font-family: $fontFamily;
+    font-size: 25px;
+    line-height: normal;
+    @include transform(capitalize, 25px);
+    color: $h4Color;
+    text-align: center; 
+} 
+.card { margin:60px;
+        padding: 10px;
+        justify-content: center;
+        background-color: black;
+         .card-text { color:white;
+        }
+}
+.animacion { animation-duration: 5s ;
+             animation-name: aparecer;
+}
+@keyframes aparecer {
+           0% {
+               opacity: 0;
+           }
+           100% {
+               opacity: 1;
+           }
+}
+.flex-container { display: flex;
+                  margin: 20px;
+                  padding: 30px;
+                  text-align: center;
+}
+.grid3{ display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: auto auto auto ; 
+        grid-column-gap: 30px;
+        text-align: center;
+        background-image: linear-gradient( #e8e8e8,#839b97) ;
+        padding: 1px;
+        margin: 0px;
+        justify-content: center;
+        justify-items: center;
+        .grid4{
+            display: grid;
+            grid-template-columns:80px 800px 800px;
+            grid-template-rows: auto auto auto;
+            grid-column-gap:3px;
+            grid-row-gap: 3px;
+            background-color: black;
+            padding: 10px;
+            margin: 10px;
+            justify-content: center;
+            justify-items: center;
+            .grid__5 { display: grid;
+                grid-template-columns: 380px 380px 380px ;
+                grid-template-rows:  auto auto auto;
+                grid-column-gap: 35px;
+                grid-row-gap: 10px;
+                justify-content: center;
+                justify-items: center;
+            }
+        }
+}
+.presupuesto { @include sizes ($widthMax, 100%);}
+
+.basic { font-size: 70px;
+         font-family: $fontFamily;
+         @include transform(capitalize, 70px);
+         color:darkorange;
+         text-decoration: black;
+}
+
+.footer {   position: abs($number: 0);
+            margin-top:0px;
+            padding-top:0px;
+            display: inline-block;
+            letter-spacing: 1px;
+            word-spacing: 5px;  
+            background-color:  $grey ;
+            text-align: center;
+            font-family: $fontFamily;
+            @include sizes ($widthMax, 100px);
+            position: relative;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            padding: 50px;
+            .footer__p { color: white; 
+            }
+        } 
+
+          
