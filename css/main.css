@@ -1,12 +1,9 @@
+@charset "UTF-8";
 body {
   font-family: "Oswald", sans-serif;
   height: 1000px;
   padding: 0px;
   margin: 0px; }
-
-.main__margin {
-  margin: 50px;
-  padding: 10px; }
 
 .section__img {
   width: 1000px;
@@ -27,7 +24,7 @@ nav {
   justify-content: center; }
   nav ul {
     letter-spacing: 0,8px;
-    word-spacing: 10px; }
+    word-spacing: 5px; }
     nav ul li {
       display: inline-block;
       padding: 4px;
@@ -41,28 +38,25 @@ nav {
 
 p {
   color: white;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: normal;
-  font-family: "Oswald", sans-serif;
-  text-align: left;
-  text-transform: capitalize 15px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize 20px;
   text-decoration: none;
-  letter-spacing: 0.5;
-  word-spacing: 1px;
-  line-height: 15px;
-  display: inline;
-  margin: 20px;
-  padding: 10px;
-  border: transparent; }
+  letter-spacing: auto;
+  word-spacing: auto;
+  line-height: auto;
+  padding: 5px;
+  text-align: center; }
 
 h1 {
-  text-transform: capitalize 400px;
+  text-transform: capitalize;
+  font-size: 65px;
   text-align: center;
   font-family: 'Oswald', sans-serif;
   color: #0b4b2e;
   letter-spacing: normal;
-  word-spacing: 10px; }
+  word-spacing: 10px;
+  padding: 10px; }
 
 .container__h1 {
   position: relative; }
@@ -81,10 +75,9 @@ h1 {
 
 .recuadro__h1 {
   background-color: #dbdbdb;
-  margin: 40px;
-  padding: 20px;
+  margin: 20px;
   justify-content: center;
-  top: auto; }
+  align-content: center; }
 
 h2 {
   text-align: center;
@@ -106,10 +99,14 @@ h3 {
   color: darkorange;
   text-align: center;
   margin: 8px;
-  padding: 2px; }
+  padding: 2px;
+  text-decoration: overline; }
 
 .h3__underline {
   text-decoration: underline; }
+
+.h3__left {
+  text-align: start; }
 
 h4 {
   font-family: "Oswald", sans-serif;
@@ -120,12 +117,21 @@ h4 {
   text-align: center; }
 
 .card {
-  margin: 60px;
-  padding: 10px;
+  background-color: black;
+  padding: 5px;
+  width: 200px;
+  height: 240px;
   justify-content: center;
-  background-color: black; }
-  .card .card-text {
-    color: white; }
+  align-items: center; }
+
+.card-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 35px; }
+
+.card-text {
+  color: white;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif; }
 
 .animacion {
   animation-duration: 5s;
@@ -145,41 +151,62 @@ h4 {
 
 .grid3 {
   display: grid;
-  grid-template-columns: 300px 300px;
-  grid-template-rows: auto auto auto;
-  grid-column-gap: 30px;
-  text-align: center;
-  background-image: linear-gradient(#e8e8e8, #839b97);
-  padding: 1px;
-  margin: 0px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 600px 600px 600px;
+  grid-row-gap: 10px;
+  grid-column-gap: 40px;
+  padding: 0px;
+  margin: 75px;
   justify-content: center;
-  justify-items: center; }
-  .grid3 .grid4 {
-    display: grid;
-    grid-template-columns: 80px 800px 800px;
-    grid-template-rows: auto auto auto;
-    grid-column-gap: 3px;
-    grid-row-gap: 3px;
-    background-color: black;
-    padding: 10px;
-    margin: 10px;
-    justify-content: center;
-    justify-items: center; }
-    .grid3 .grid4 .grid__5 {
-      display: grid;
-      grid-template-columns: 380px 380px 380px;
-      grid-template-rows: auto auto auto;
-      grid-column-gap: 35px;
-      grid-row-gap: 10px;
-      justify-content: center;
-      justify-items: center; }
+  align-items: center;
+  text-align: center; }
+
+.grid4 {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 400px 400px 400px;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+  margin: 50px;
+  justify-content: center; }
+
+.grid__5 {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 100px 350px 100px;
+  grid-column-gap: 35px;
+  grid-row-gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  margin: 40px; }
+
+.grid__6 {
+  display: grid;
+  grid-template-columns: 800px;
+  grid-template-rows: auto auto auto auto;
+  grid-row-gap: 30px;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px; }
+
+.galeria {
+  width: 100%;
+  height: 100%; }
+
+.tamaño {
+  width: 400px;
+  height: 450px;
+  justify-content: center;
+  align-items: center; }
 
 .presupuesto {
   width: 100%;
   height: 100%; }
 
 .basic {
-  font-size: 70px;
+  font-size: 60px;
   font-family: "Oswald", sans-serif;
   text-transform: capitalize 70px;
   color: darkorange;

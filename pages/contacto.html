@@ -26,41 +26,41 @@
     <li> <a href="contacto.html"> Contacto </a> </li> 
    </ul>
 </nav>
-<div class="recuadro">
+<div class="recuadro__h1">
   <h1> Contacto </h1>
 </div>
 </header>
-<main class="main__margin">
- <section> 
- <h2> ¿Cómo contactarnos? </h2>
- <p>
-  On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized 
-  by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble 
-  are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will,
-  which is the same as saying through shrinking from toil and pain. </p>
-  <form name="contact-form" method="POST"> 
-    <label for="form_name"> Nombre y Apellido </label>
-    <input type="text" name="nombre" id="form_name" placeholder="María Luciana Natale"/>
-    <label for="form_email" name=email id="form_email"> Email </label>
-    <input type="email" name="email" id="form_email"  placeholder="agusti_zarate@hotmail.com" />
-    <label for="form_telefono" name=Telefono id="form_email"> Teléfono </label>
-    <input type="tel" name="Telefono" id="form_telefono" placeholder="1550636030" />
-    <label for=""   name="" id="" >  Selecione tamaño   </label>
-    <select name="area" id="form_area" required> 
-      <option selected> Basic </option>
-      <option> Premium </option>
-      <option> Deluxe </option>
-    </select>
-    <p> <h3 class="left"> Dejanos un mensaje con tu idea </h3> </p>
-    <textarea name="mensaje" id="form_mensaje" rows="10" cols="40" > </textarea>
-    <input type="checkbox" name="condiciones" id="form_condiciones" checked="checked" />
-    <label for="form_condiciones"> Acepto los términos y condiciones </label>
-    <input type="submit" name="enviar_formulario" value="Enviar mensaje" />
-    <input type="reset" name="reset_formulario" value="Borrar formulario" />
-  </form>
-
-
- </section>
+<main class="container">
+  <section> 
+    <h2> ¿Cómo contactarnos? </h2>
+    <p>
+     On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized 
+     by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble 
+     are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will,
+     which is the same as saying through shrinking from toil and pain. </p>
+     <form name="contact-form" method="POST"> 
+       <label for="form_name"> <p> Nombre y Apellido </p> </label>
+       <input type="text" name="nombre" id="form_name" placeholder="María Luciana Natale"/>
+       <label for="form_email" name=email id="form_email"> <p> Email </p> </label>
+       <input type="email" name="email" id="form_email"  placeholder="agusti_zarate@hotmail.com" />
+       <label for="form_telefono" name=Telefono id="form_email"> <p> Teléfono </p> </label>
+       <input type="tel" name="Telefono" id="form_telefono" placeholder="1550636030" />
+       <label for=""   name="" id="" > <p> Selecione tamaño  </p> </label>
+       <select name="area" id="form_area" required> 
+         <option selected> Basic </option>
+         <option> Premium </option>
+         <option> Deluxe </option>
+       </select>
+       <h3><p class="h3__left"> Dejanos un mensaje con tu idea </p></h3> 
+       <textarea name="mensaje" id="form_mensaje" rows="10" cols="40" > </textarea>
+       <input type="checkbox" name="condiciones" id="form_condiciones" checked="checked" />
+       <label for="form_condiciones"> <p> Acepto los términos y condiciones </p></label>
+       <input type="submit" name="enviar_formulario" value="Enviar mensaje" />
+       <input type="reset" name="reset_formulario" value="Borrar formulario" />
+     </form>
+   
+   
+    </section>
 </main>
  
 <footer class="footer">
