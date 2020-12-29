@@ -1,90 +1,76 @@
+@charset "UTF-8";
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nav {
+    font-size: 1px; } }
+
 body {
   font-family: "Oswald", sans-serif;
-  height: 1000px;
   padding: 0px;
   margin: 0px; }
 
-.main__margin {
-  margin: 50px;
-  padding: 10px; }
-
 .section__img {
   width: 1000px;
-  height: 500px;
+  height: 450px;
   position: relative;
   margin: 25px; }
 
 .background {
-  background-color: black; }
+  background-color: #222831; }
 
 nav {
-  display: flex;
-  width: 100%;
-  height: 50px;
-  text-transform: none 18px;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center; }
-  nav ul {
-    letter-spacing: 0,8px;
-    word-spacing: 10px; }
-    nav ul li {
-      display: inline-block;
-      padding: 4px;
-      margin: 5px; }
-      nav ul li a {
-        text-align: center;
-        list-style-type: none;
-        text-decoration: none;
-        color: white;
-        font-family: "Oswald", sans-serif; }
+  height: 40px; }
+
+.nav__a {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+  padding: 4px;
+  margin: 3px; }
 
 p {
   color: white;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: normal;
-  font-family: "Oswald", sans-serif;
-  text-align: left;
-  text-transform: capitalize 15px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize 20px;
   text-decoration: none;
-  letter-spacing: 0.5;
-  word-spacing: 1px;
-  line-height: 15px;
-  display: inline;
-  margin: 20px;
-  padding: 10px;
-  border: transparent; }
+  letter-spacing: auto;
+  word-spacing: auto;
+  line-height: auto;
+  padding: 5px;
+  text-align: center; }
 
 h1 {
-  text-transform: capitalize 400px;
+  text-transform: capitalize;
+  font-size: 65px;
   text-align: center;
   font-family: 'Oswald', sans-serif;
-  color: #0b4b2e;
+  color: #a3d2ca;
   letter-spacing: normal;
-  word-spacing: 10px; }
+  word-spacing: 10px;
+  padding: 10px; }
 
 .container__h1 {
   position: relative; }
   .container__h1 .center {
     position: absolute;
-    top: 79%; }
+    top: 78%; }
     .container__h1 .center .h1__rosa {
       font-family: 'Bebas Neue', cursive;
       letter-spacing: normal;
       color: #f17668ef;
       font-size: 65px;
-      padding: 14px;
-      margin: 0px;
+      padding: 10px;
+      margin: 10px;
       background-color: #131313c9;
       align-items: center; }
 
 .recuadro__h1 {
-  background-color: #dbdbdb;
-  margin: 40px;
-  padding: 20px;
+  background-color: #f8f1f136;
+  margin: 20px;
   justify-content: center;
-  top: auto; }
+  align-content: center;
+  position: static; }
 
 h2 {
   text-align: center;
@@ -92,7 +78,7 @@ h2 {
   font-size: 40px;
   line-height: normal;
   text-transform: capitalize 40px;
-  color: #17A363;
+  color: #a3d2ca;
   letter-spacing: normal;
   word-spacing: normal;
   margin: 30px;
@@ -103,29 +89,55 @@ h3 {
   font-size: 25px;
   line-height: normal;
   text-transform: capitalize 25px;
-  color: darkorange;
+  color: #db6400;
   text-align: center;
   margin: 8px;
-  padding: 2px; }
+  padding: 2px;
+  text-decoration: overline; }
 
 .h3__underline {
   text-decoration: underline; }
+
+.h3__left {
+  text-align: start; }
 
 h4 {
   font-family: "Oswald", sans-serif;
   font-size: 25px;
   line-height: normal;
   text-transform: capitalize 25px;
-  color: #17A363;
+  color: #5eaaa8;
   text-align: center; }
 
+.galeria {
+  width: 100%;
+  height: 100%; }
+
+.tamaño {
+  width: 100%;
+  height: 100%; }
+
+.presupuesto {
+  width: 100%;
+  height: 100%; }
+
 .card {
-  margin: 60px;
-  padding: 10px;
+  background-color: #222831;
+  padding: 5px;
+  width: 200px;
+  height: 240px;
   justify-content: center;
-  background-color: black; }
-  .card .card-text {
-    color: white; }
+  align-items: center;
+  position: static; }
+
+.card-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 35px; }
+
+.card-text {
+  color: white;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif; }
 
 .animacion {
   animation-duration: 5s;
@@ -143,46 +155,54 @@ h4 {
   padding: 30px;
   text-align: center; }
 
+.carrousel {
+  margin: 20px; }
+
 .grid3 {
   display: grid;
-  grid-template-columns: 300px 300px;
-  grid-template-rows: auto auto auto;
-  grid-column-gap: 30px;
-  text-align: center;
-  background-image: linear-gradient(#e8e8e8, #839b97);
-  padding: 1px;
-  margin: 0px;
-  justify-content: center;
-  justify-items: center; }
-  .grid3 .grid4 {
-    display: grid;
-    grid-template-columns: 80px 800px 800px;
-    grid-template-rows: auto auto auto;
-    grid-column-gap: 3px;
-    grid-row-gap: 3px;
-    background-color: black;
-    padding: 10px;
-    margin: 10px;
-    justify-content: center;
-    justify-items: center; }
-    .grid3 .grid4 .grid__5 {
-      display: grid;
-      grid-template-columns: 380px 380px 380px;
-      grid-template-rows: auto auto auto;
-      grid-column-gap: 35px;
-      grid-row-gap: 10px;
-      justify-content: center;
-      justify-items: center; }
-
-.presupuesto {
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 400px 400px;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
   width: 100%;
-  height: 100%; }
+  padding: 5px;
+  justify-content: center; }
+
+.grid4 {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 400px 400px 400px;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+  margin: 45px;
+  justify-content: center; }
+
+.grid__5 {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 100px 350px 100px;
+  grid-column-gap: 35px;
+  grid-row-gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  margin: 40px; }
+
+.grid__6 {
+  display: grid;
+  grid-template-columns: 800px;
+  grid-template-rows: auto auto auto auto;
+  grid-row-gap: 30px;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px; }
 
 .basic {
-  font-size: 70px;
+  font-size: 60px;
   font-family: "Oswald", sans-serif;
   text-transform: capitalize 70px;
-  color: darkorange;
+  color: #db6400;
   text-decoration: black; }
 
 .footer {
