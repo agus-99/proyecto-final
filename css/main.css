@@ -11,7 +11,7 @@ body {
 
 .section__img {
   width: 1000px;
-  height: 450px;
+  height: 500px;
   position: relative;
   margin: 25px; }
 
@@ -160,11 +160,11 @@ h4 {
 
 .grid3 {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 400px 400px;
+  grid-template-columns: 350px 350px;
+  grid-template-rows: 450px 450px 450px;
   grid-row-gap: 20px;
   grid-column-gap: 20px;
-  width: 100%;
+  margin: 45px;
   padding: 5px;
   justify-content: center; }
 
@@ -174,7 +174,7 @@ h4 {
   grid-template-rows: 400px 400px 400px;
   grid-row-gap: 30px;
   grid-column-gap: 30px;
-  margin: 45px;
+  margin: 50px;
   justify-content: center; }
 
 .grid__5 {
