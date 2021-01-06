@@ -246,17 +246,6 @@ h4 {
   justify-items: center;
   margin: 15px; }
 
-.grid__6 {
-  display: grid;
-  grid-template-columns: 800px;
-  grid-template-rows: auto auto auto auto;
-  grid-row-gap: 30px;
-  margin: 20px;
-  align-items: center;
-  justify-content: center;
-  margin: 0px;
-  padding: 0px; }
-
 .footer {
   align-items: center;
   margin-top: 0px;
