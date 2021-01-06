@@ -1,16 +1,19 @@
 $widthMax: 100%;
 $fontFamily: 'Oswald', sans-serif ; 
 $size: 70px; 
-
-@mixin transform ($textTransform , $fontSize)
+$familyRoboto: 'Roboto', sans-serif;
+@mixin transform ($textTransform)
  {
-    text-transform: $textTransform  $fontSize;
-  }
-  
+  text-transform: $textTransform ;
+}
 @mixin sizes ($width, $heigth)
 {
-    width: $width;
-    height: $heigth;
+  width: $width;
+  height: $heigth;
+}
+@mixin fsize ($fontsize) 
+{
+  font-size: $fontsize;
 }
 
 
