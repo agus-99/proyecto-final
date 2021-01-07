@@ -11,6 +11,8 @@ body { font-family: $fontFamily;
        background-color: $backColor;
        height: auto;
 }
+.background-index { background-image: url(../imagenes/index-2.jpg);
+}
 nav { height: 44px;
 }
 
@@ -20,11 +22,7 @@ nav { height: 44px;
           padding: 10px;
           margin: 3px;
 }
-.section__img { width: 900px;
-                height: 500px;
-                margin: 25px;
 
-}
 .text-media { font-size: 15px;
               color: $letterColor;
               text-align: start;
@@ -32,7 +30,7 @@ nav { height: 44px;
 p { color: $letterColor;
     @include fsize (14px);
     font-family: $familyRoboto;
-    @include transform(); 
+    @include transform(capitalize); 
     text-decoration: none;
     text-transform: inherit;
     letter-spacing: auto;
@@ -61,14 +59,14 @@ h1 {@include transform (capitalize);
     padding: 5px;
 }
 .container__h1 { position: relative;
-    .center{ position: absolute;                     
-             top: 80%;
+    .center{ position: absolute;                   
+             top: 5%;
         .h1__rosa{ font-family: 'Bebas Neue', cursive;
                    letter-spacing: normal;  
                    color: $pink ;
                    @include fsize (65px);
                    padding: 10px;
-                   margin: 10px;
+                   margin: 0px;
                    background-color:  $colorlogo;
                    align-items: center;
                 }
@@ -149,7 +147,7 @@ h4{ font-family: $fontFamily;
 .rounded-cirlce{ @include sizes(200px,200px);
 }
 .media { margin: 0px;
-         padding: 0px;
+         padding: 6px;
 
 }
 
@@ -159,8 +157,7 @@ h4{ font-family: $fontFamily;
        height: 240px;
        justify-content: center;
        align-items: center;
-       position: static;
-
+       position: absolute;
 }
 .card-title { font-family: $fontFamily; 
               font-size: 35px;
