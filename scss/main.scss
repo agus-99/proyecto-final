@@ -7,25 +7,29 @@
 }
 body { font-family: $fontFamily;
        padding: 0px;
-       margin: 0px;
+       margin: auto;
        background-color: $backColor;
        height: auto;
 }
-.background-index { background-image: url(../imagenes/index-2.jpg);
+nav { height: 50px;
+    background-color: transparent;
+      
 }
-nav { height: 44px;
-}
-
 .nav__a { color: $white;
           font-family: $fontFamily;
           @include fsize (17px);
           padding: 10px;
           margin: 3px;
-}
 
+}
+.section__img { width: 1100px;
+                height: auto;
+                margin: auto;
+                padding: auto;
+}
 .text-media { font-size: 15px;
-              color: $letterColor;
-              text-align: start;
+    color: $letterColor;
+    text-align: start;
 }
 p { color: $letterColor;
     @include fsize (14px);
@@ -60,7 +64,7 @@ h1 {@include transform (capitalize);
 }
 .container__h1 { position: relative;
     .center{ position: absolute;                   
-             top: 5%;
+             top: 10%;
         .h1__rosa{ font-family: 'Bebas Neue', cursive;
                    letter-spacing: normal;  
                    color: $pink ;
@@ -150,19 +154,10 @@ h4{ font-family: $fontFamily;
          padding: 6px;
 
 }
-
-.card {background-color: transparent;
-       padding: 5px;
-       width: 200px;
-       height: 240px;
-       justify-content: center;
-       align-items: center;
-       position: absolute;
-}
 .card-title { font-family: $fontFamily; 
               font-size: 35px;
 }
-.card-text { color: white; 
+.card-text { color: black; 
              @include fsize(15px);
              font-family: $familyRoboto;
              @include transform (capitalize);
@@ -218,7 +213,7 @@ h4{ font-family: $fontFamily;
             display: inline-block;
             letter-spacing: 1px;
             word-spacing: 5px;  
-            background-color: $grey ;
+            background-color: $backColor;
             text-align: center;
             font-family: $fontFamily;
             @include sizes ($widthMax, 40px);
@@ -227,7 +222,7 @@ h4{ font-family: $fontFamily;
             right: 0;
             left: 0;
             padding: 5px;
-            .footer__p { color: white; 
+            .footer__p { color:white; 
             }
 } 
 
