@@ -54,39 +54,56 @@
 </header>
 <main class="container">
   <section> 
-    <h2> ¿Cómo contactarnos? </h2>
+    <h2>¿Cómo contactarnos?</h2>
     <div>
-      <p class="p__contacto"><i class="fas fa-location-arrow"></i> <strong>Ubicación</strong> Esteban Arroyo 444, San Martín. </p>
+      <p class="p__contacto"> <i class="fas fa-location-arrow"></i> <strong>Ubicación</strong> Esteban Arroyo 444, San Martín.</p>
     </div>
     <div>
-      <p class="p__contacto"><i class="fas fa-phone-square-alt"></i> <strong>Teléfono</strong> 11 44569276</p>
+      <p class="p__contacto"> <i class="fas fa-phone-square-alt"></i> <strong>Teléfono</strong> 11 44569276</p>
     </div>
     <div>
-      <p class="p__contacto"><i class="fas fa-envelope-square"></i> <strong>Gmail</strong> jess_tatto@gmail.com  </p>
+      <p class="p__contacto"> <i class="fas fa-envelope-square"></i> <strong>Gmail</strong> jess_tatto@gmail.com</p>
     </div>
-    <form name="contact-form" method="POST"> 
-       <label for="form_name"> <p> Nombre y Apellido </p> </label>
-       <input type="text" name="nombre" id="form_name" placeholder="María Luna Valdivia"/>
-       <label for="form_email" name=email id="form_email"> <p> Email </p> </label>
-       <input type="email" name="email" id="form_email"  placeholder="alita_juarez@hotmail.com" />
-       <label for="form_telefono" name=Telefono id="form_email"> <p> Teléfono </p> </label>
-       <input type="tel" name="Telefono" id="form_telefono" placeholder="1550636030" />
-       <label for=""   name="" id="" > <p> Selecione tamaño  </p> </label>
-       <select name="area" id="form_area" required> 
-         <option selected> Basic </option>
-         <option> Premium </option>
-         <option> Deluxe </option>
-       </select>
-       <h3><p class="h3__left"> Dejanos un mensaje con tu idea </p></h3> 
-       <textarea name="mensaje" id="form_mensaje" rows="5" cols="40" > </textarea>
-       <input type="checkbox" name="condiciones" id="form_condiciones" checked="checked" />
-       <label for="form_condiciones"> <p> Acepto los términos y condiciones </p></label>
-       <input type="submit" name="enviar_formulario" value="Enviar mensaje" />
-       <input type="reset" name="reset_formulario" value="Borrar formulario" />
-     </form>
-   
-   
-    </section>
+  </section>
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4"></label>
+        <input type="name" class="form-control"  placeholder="María Agustina Torres">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4"></label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="maria_torres@gmail.com">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress"></label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1156742309">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity"></label>
+        <input type="text" class="form-control" id="inputCity" placeholder="Mensaje">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState"></label>
+        <select id="inputState" class="form-control">
+          <option selected>Basic</option>
+          <option>Premium</option>
+          <option>Deluxe</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+         <p>Confirmación formulario</p>
+        </label>
+        <button type="submit" class="btn btn-dark">Enviar</button>
+      </div>
+    </div>
+  </form>
 </main>
  
 <footer class="footer">
