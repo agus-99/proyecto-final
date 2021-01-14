@@ -7,15 +7,6 @@ body { font-family: $fontFamily;
        background-color: $backColor;
        height: auto;
 }
-nav { height: 50px;
-      background-color: transparent;
-}
-.nav__a { color: $white;
-          font-family: $fontFamily;
-          @include fsize (17px);
-          padding: 10px;
-          margin: 3px;
-}
 .text-media { font-size: 14px;
               color: $letterColor;
               text-align: start;
@@ -41,7 +32,7 @@ p { color: $letterColor;
     line-height: 20px;
     padding: 5px;
 }
-.p__index { color:$letterColor;
+.p__index { color:$white;
             font-size: 34px;
             text-decoration: overline;
             font-family: $fontFamily;
@@ -64,14 +55,16 @@ h1 {@include transform (capitalize);
                 margin: auto;
 }
 .center{ position: absolute;  
-         top: 55%;
-         left: 300px;
+         top: 45%;
+         left: 320px;
 
 }
-.h1__rosa{font-family: 'Abril Fatface', cursive;
+.nav__center { position: absolute;
+}
+.h1__rosa{font-family: 'Bebas Neue', cursive;
           letter-spacing: normal;  
-          color: $pink ;
-          @include fsize (100px);
+          color: $pink;
+          @include fsize (120px);
           @include transform (capitalize);
           padding: 0px;
           align-items: center;
@@ -228,8 +221,8 @@ h4{ font-family: $fontFamily;
            grid-row-gap: 5px;
            justify-content: center;
            justify-items: center;
-           margin: 20px;
-           padding: 100px;
+           margin: auto;
+           padding: 20px;
 }
 
 .footer {   align-items: center;
