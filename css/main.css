@@ -153,10 +153,10 @@ h4 {
   text-decoration: overline; }
 
 .galeria {
-  width: 100px;
-  height: 100px;
-  margin: 0px;
-  padding: 0px; }
+  width: 200px;
+  height: 200px;
+  margin: 3px;
+  padding: 5px; }
 
 .galeria__2 {
   width: 400px;
