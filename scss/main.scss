@@ -7,6 +7,32 @@ body { font-family: $fontFamily;
        background-color: $backColor;
        height: auto;
 }
+nav { height: 50px;
+      background-color: transparent;
+      width: auto;
+      left: 800px;
+}
+.nav__a { 
+          font-family: $familyRoboto;
+          letter-spacing: normal;
+          @include fsize (15px);
+          padding: 0px;
+          margin: 0px;
+}
+.nav__center {
+              position: absolute;
+}
+.container__h1 { position: relative;
+}
+.section__img { width: $widthMax;
+                height: 100%;
+                margin: auto;
+}
+.center{ position: absolute;  
+         top: 45%;
+         left: 250px;
+
+}
 .text-media { font-size: 14px;
               color: $letterColor;
               text-align: start;
@@ -32,7 +58,7 @@ p { color: $letterColor;
     line-height: 20px;
     padding: 5px;
 }
-.p__index { color:$white;
+.p__index { color: $white;
             font-size: 34px;
             text-decoration: overline;
             font-family: $fontFamily;
@@ -48,22 +74,10 @@ h1 {@include transform (capitalize);
     word-spacing: 10px;
     padding: 5px;
 }
-.container__h1 { position: relative;
-}
-.section__img { width: $widthMax;
-                height: 100%;
-                margin: auto;
-}
-.center{ position: absolute;  
-         top: 45%;
-         left: 320px;
 
-}
-.nav__center { position: absolute;
-}
-.h1__rosa{font-family: 'Bebas Neue', cursive;
+.h1__rosa{font-family: 'Abril Fatface', cursive;
           letter-spacing: normal;  
-          color: $pink;
+          color: #ffbbb4;
           @include fsize (120px);
           @include transform (capitalize);
           padding: 0px;
