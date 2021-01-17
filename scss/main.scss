@@ -7,10 +7,10 @@ body { font-family: $fontFamily;
        background-color: $backColor;
        height: auto;
 }
-nav { height: 50px;
-      background-color: transparent;
+nav { height: 40px;
+      background-color:transparent;
       width: auto;
-      left: 800px;
+      left: 0px;
 }
 .nav__a { 
           font-family: $familyRoboto;
@@ -33,12 +33,19 @@ nav { height: 50px;
          left: 250px;
 
 }
+.background__contacto { background-image: url(../imagenes/estudio.jpg);
+                        padding: 50px;
+                        margin: auto;
+                        width: $widthMax;
+                        height: 700px;
+
+}
 .text-media { font-size: 14px;
               color: $letterColor;
               text-align: start;
 }
 p { color: $letterColor;
-    @include fsize (14px);
+    @include fsize ($lettersize);
     font-family: $familyRoboto;
     @include transform(capitalize); 
     text-decoration: none;
@@ -86,7 +93,7 @@ h1 {@include transform (capitalize);
           
 }
 .recuadro__h1 { display: flex;
-                background-color: #f8f1f136;
+                background-color: #eeeeee;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
@@ -104,7 +111,10 @@ h2 {text-align: center;
     margin:auto;
     padding: 0px;
 }
-.h2__media {text-align: start;
+.h2__media {text-align: center;
+            text-decoration: overline;
+            margin: 10px;
+            padding: 0px;
 }
 h3 {font-family:$fontFamily;
     @include fsize(20px);
@@ -124,8 +134,9 @@ h3 {font-family:$fontFamily;
 
 }
 .h3__media { color: $h3Color;
-            text-align: center;
-            text-decoration: none;
+             text-align: center;
+             text-decoration: overline;
+             @include fsize (30px);
 
 }
 h4{ font-family: $fontFamily;
@@ -139,22 +150,27 @@ h4{ font-family: $fontFamily;
 .basic { font-family: $fontFamily;
          @include transform(capitalize);
          @include fsize (25px);
-         color: $h3Color;
+         color: white;
          text-align: start;
          padding: 5px;
          text-decoration: overline;
 }
 .galeria { width: 200px;
-           height: 200px;
-           margin: 3px;
+           height: 230px;
+           margin:3px;
            padding: 5px;
+           border-radius: 10px;
 }
-.galeria__2 {@include sizes (400px, 500px);
+.galeria:hover {
+    transform: scaleX(-1);
+  }
+.galeria__2 {@include sizes (450px, 500px);
              padding: 0px;
              background-color: black;
-             margin: 0px;
+             margin: auto;
 }
 .presupuesto { @include sizes(250px,250px);
+               border-radius: 10px;
 }
 .img__index { width: 200px;
               height: auto;
@@ -162,8 +178,47 @@ h4{ font-family: $fontFamily;
 }
 .rounded-cirlce{ @include sizes(200px,200px);
 }
-.media { margin: 20px;
-         padding: 0px;
+.container__media { position: relative;
+                    width: 50%;
+}
+.d-flex {display: block;
+         width: 100%;
+         height: auto;
+}
+.overlay {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.212);
+    overflow: hidden;
+    width:450px;
+    height:0;
+    transition: .5s ease;
+  }
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+.text { font-family: $familyRoboto;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+  }
+.media { margin: auto;
+         padding: 5px;
+}
+.text-media { width: auto;
+              padding:0px ;
+              margin: 0px;
+              text-align: center;
 }
 .card  { width: 200px;
          height: auto;
@@ -178,8 +233,16 @@ h4{ font-family: $fontFamily;
              font-family: $familyRoboto;
              @include transform (capitalize);
 }
-.animacion {animation-duration: 7s;
+.animacion {animation-duration: 4s;
             animation-name: aparecer;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 .card-d { @include sizes (300px, 300px);
           margin: 0px;
@@ -194,14 +257,7 @@ h4{ font-family: $fontFamily;
 }
 .card-link { color: $pink;
 }
-@keyframes aparecer {
-           0% {
-               opacity: 0;
-           }
-           100% {
-               opacity: 1;
-           }
-}
+
 .carrousel { margin: 20px;
 }
 .button_1 { float: left;
@@ -239,12 +295,12 @@ h4{ font-family: $fontFamily;
            padding: 20px;
 }
 
-.footer {   align-items: center;
+.footer {  top: 90px;
             margin-top:0px;
             padding-top:0px;
             display: inline-block;
-            letter-spacing: 1px;
-            word-spacing: 5px;  
+            letter-spacing: normal;
+            word-spacing: normal;  
             background-color: $backColor;
             text-align: center;
             font-family: $fontFamily;
@@ -253,7 +309,10 @@ h4{ font-family: $fontFamily;
             bottom: 0;
             right: 0;
             left: 0;
-            padding: 5px;
-            .footer__p { color:white;
+            padding: 0px;
+            height: auto;
+            .footer__p { color: $white;
+                         @include fsize (16px);
+                         
             }
 }
