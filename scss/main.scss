@@ -50,9 +50,9 @@ p { color: $letterColor;
     @include transform(capitalize); 
     text-decoration: none;
     text-transform: inherit;
-    letter-spacing: auto;
-    word-spacing: auto;
-    line-height: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
     padding: 5px;
     text-align: center;
 }
@@ -93,7 +93,7 @@ h1 {@include transform (capitalize);
           
 }
 .recuadro__h1 { display: flex;
-                background-color: #eeeeee;
+                background-color: transparent;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
@@ -150,27 +150,27 @@ h4{ font-family: $fontFamily;
 .basic { font-family: $fontFamily;
          @include transform(capitalize);
          @include fsize (25px);
-         color: white;
-         text-align: start;
-         padding: 5px;
+         color: $h3Color;
+         text-align: center;
+         padding: 0px;
          text-decoration: overline;
 }
-.galeria { width: 200px;
+.galeria { 
            height: 230px;
            margin:3px;
            padding: 5px;
-           border-radius: 10px;
+           width: 200px;
 }
 .galeria:hover {
-    transform: scaleX(-1);
+    box-shadow: 0 0 3px 4px rgba(255, 255, 255, 0.863);
   }
 .galeria__2 {@include sizes (450px, 500px);
              padding: 0px;
              background-color: black;
              margin: auto;
 }
-.presupuesto { @include sizes(250px,250px);
-               border-radius: 10px;
+.presupuesto { @include sizes(300px,300px);
+               
 }
 .img__index { width: 200px;
               height: auto;
@@ -220,18 +220,19 @@ h4{ font-family: $fontFamily;
               margin: 0px;
               text-align: center;
 }
-.card  { width: 200px;
-         height: auto;
-         background-color: transparent;
-         margin:0px;
+.card  { width: 300px;
+         height: 500px;
+         background-color:transparent;
+         margin:auto;
 }
 .card-title { font-family: $fontFamily; 
               font-size: 35px;
 }
 .card-text { color: white; 
-             @include fsize(12px);
+             @include fsize(15px);
              font-family: $familyRoboto;
              @include transform (capitalize);
+             line-height: 0px;
 }
 .animacion {animation-duration: 4s;
             animation-name: aparecer;
@@ -285,23 +286,24 @@ h4{ font-family: $fontFamily;
             align-items: center;
 }
 .grid__5 { display: grid;
-           grid-template-columns: 250px 250px 250px ;
-           grid-template-rows: auto auto 77px;
-           grid-column-gap: 35px;
-           grid-row-gap: 5px;
+           grid-template-columns: 300px 300px 300px;
+           grid-template-rows: 500px;
+           grid-column-gap: 20px;
            justify-content: center;
            justify-items: center;
            margin: auto;
-           padding: 20px;
+           padding:10px;
 }
-
+.fab { color: $white;
+}
 .footer {  top: 90px;
             margin-top:0px;
             padding-top:0px;
             display: inline-block;
             letter-spacing: normal;
             word-spacing: normal;  
-            background-color: $backColor;
+            line-height: 0px;
+            background-color: #0c0e1165;
             text-align: center;
             font-family: $fontFamily;
             @include sizes ($widthMax, 40px);
@@ -309,7 +311,7 @@ h4{ font-family: $fontFamily;
             bottom: 0;
             right: 0;
             left: 0;
-            padding: 0px;
+            padding: 10px;
             height: auto;
             .footer__p { color: $white;
                          @include fsize (16px);

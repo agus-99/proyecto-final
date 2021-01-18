@@ -53,9 +53,9 @@ p {
   text-transform: capitalize;
   text-decoration: none;
   text-transform: inherit;
-  letter-spacing: auto;
-  word-spacing: auto;
-  line-height: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
   padding: 5px;
   text-align: center; }
 
@@ -80,7 +80,7 @@ h1 {
   font-size: 55px;
   text-align: center;
   font-family: "Oswald", sans-serif;
-  color: #393e46;
+  color: #cccccc;
   letter-spacing: normal;
   word-spacing: 10px;
   padding: 5px; }
@@ -96,7 +96,7 @@ h1 {
 
 .recuadro__h1 {
   display: flex;
-  background-color: #eeeeee;
+  background-color: transparent;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -158,20 +158,19 @@ h4 {
   font-family: "Oswald", sans-serif;
   text-transform: capitalize;
   font-size: 25px;
-  color: white;
-  text-align: start;
-  padding: 5px;
+  color: #ffa62b;
+  text-align: center;
+  padding: 0px;
   text-decoration: overline; }
 
 .galeria {
-  width: 200px;
   height: 230px;
   margin: 3px;
   padding: 5px;
-  border-radius: 10px; }
+  width: 200px; }
 
 .galeria:hover {
-  transform: scaleX(-1); }
+  box-shadow: 0 0 3px 4px rgba(255, 255, 255, 0.863); }
 
 .galeria__2 {
   width: 450px;
@@ -181,9 +180,8 @@ h4 {
   margin: auto; }
 
 .presupuesto {
-  width: 250px;
-  height: 250px;
-  border-radius: 10px; }
+  width: 300px;
+  height: 300px; }
 
 .img__index {
   width: 200px;
@@ -240,10 +238,10 @@ h4 {
   text-align: center; }
 
 .card {
-  width: 200px;
-  height: auto;
+  width: 300px;
+  height: 500px;
   background-color: transparent;
-  margin: 0px; }
+  margin: auto; }
 
 .card-title {
   font-family: "Oswald", sans-serif;
@@ -251,9 +249,10 @@ h4 {
 
 .card-text {
   color: white;
-  font-size: 12px;
+  font-size: 15px;
   font-family: "Roboto", sans-serif;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  line-height: 0px; }
 
 .animacion {
   animation-duration: 4s;
@@ -315,14 +314,16 @@ h4 {
 
 .grid__5 {
   display: grid;
-  grid-template-columns: 250px 250px 250px;
-  grid-template-rows: auto auto 77px;
-  grid-column-gap: 35px;
-  grid-row-gap: 5px;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 500px;
+  grid-column-gap: 20px;
   justify-content: center;
   justify-items: center;
   margin: auto;
-  padding: 20px; }
+  padding: 10px; }
+
+.fab {
+  color: white; }
 
 .footer {
   top: 90px;
@@ -331,7 +332,8 @@ h4 {
   display: inline-block;
   letter-spacing: normal;
   word-spacing: normal;
-  background-color: #222831;
+  line-height: 0px;
+  background-color: #0c0e1165;
   text-align: center;
   font-family: "Oswald", sans-serif;
   width: 100%;
@@ -340,7 +342,7 @@ h4 {
   bottom: 0;
   right: 0;
   left: 0;
-  padding: 0px;
+  padding: 10px;
   height: auto; }
   .footer .footer__p {
     color: white;
