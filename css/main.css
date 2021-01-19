@@ -1,3 +1,8 @@
+@media only screen and (max-width: 768px) {
+  .galeria__2 {
+    width: 100px;
+    height: 100px; } }
+
 body {
   font-family: "Bebas Neue", cursive;
   padding: 0px;
@@ -5,16 +10,17 @@ body {
   background-color: #222831;
   height: auto; }
 
-nav {
+.navbar {
   height: 40px;
   background-color: transparent;
   width: auto;
   left: 0px;
-  text-align: left; }
+  text-align: left;
+  word-spacing: 0px; }
 
 .nav__a {
   font-family: "Roboto", sans-serif;
-  letter-spacing: normal;
+  letter-spacing: 0px;
   font-size: 15px;
   padding: 0px;
   margin: 0px; }
@@ -47,6 +53,9 @@ nav {
   color: white;
   text-align: start; }
 
+.margin__galeria {
+  margin: 25px; }
+
 p {
   color: white;
   font-size: 18px;
@@ -74,7 +83,7 @@ p {
   color: white;
   font-size: 34px;
   text-decoration: overline;
-  font-family: "Bebas Neue", cursive; }
+  font-family: "Roboto", sans-serif; }
 
 h1 {
   text-transform: capitalize;
@@ -145,7 +154,9 @@ h3 {
 .h3__media {
   color: white;
   text-align: center;
-  font-size: 30px; }
+  font-size: 30px;
+  padding: 0px;
+  margin: 20px; }
 
 h4 {
   font-family: "Bebas Neue", cursive;
@@ -163,21 +174,17 @@ h4 {
   text-align: center;
   padding: 0px; }
 
-.d-flex {
-  border-radius: 5px; }
-
 .galeria {
-  height: 230px;
-  margin: 3px;
+  height: 360px;
   padding: 5px;
-  width: 200px; }
+  width: 300px; }
 
 .galeria:hover {
-  box-shadow: 0 0 3px 4px rgba(255, 255, 255, 0.863);
+  box-shadow: 0 0 1px 4px rgba(255, 255, 255, 0.863);
   transform: scaleX(-1); }
 
 .galeria__2 {
-  width: 450px;
+  width: 400px;
   height: 500px;
   padding: 0px;
   background-color: black;
@@ -202,7 +209,10 @@ h4 {
 .d-flex {
   display: block;
   width: 100%;
-  height: auto; }
+  height: auto;
+  border-radius: 3px;
+  width: 500px;
+  height: 280px; }
 
 .overlay {
   position: absolute;
@@ -211,7 +221,7 @@ h4 {
   right: 0;
   background-color: rgba(0, 0, 0, 0.212);
   overflow: hidden;
-  width: 450px;
+  width: 500px;
   height: 0;
   transition: .5s ease; }
 
@@ -239,7 +249,8 @@ h4 {
   width: auto;
   padding: 0px;
   margin: 0px;
-  text-align: center; }
+  text-align: center;
+  color: white; }
 
 .card {
   width: 300px;
@@ -341,13 +352,12 @@ h4 {
   text-align: center;
   font-family: "Bebas Neue", cursive;
   width: 100%;
-  height: 40px;
+  height: auto;
   position: relative;
   bottom: 0;
   right: 0;
   left: 0;
-  padding: 10px;
-  height: auto; }
+  padding: 20px; }
   .footer .footer__p {
     color: white;
     font-size: 16px; }

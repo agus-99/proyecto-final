@@ -1,21 +1,28 @@
 @import "colors" ;
 @import "variables" ;
 
+@media only screen and (max-width:768px)
+{ .galeria__2 { @include sizes (100px,100px);}
+
+}
+
 body { font-family: $fontFamily;
        padding: 0px;
        margin: auto;
        background-color: $backColor;
        height: auto;
 }
-nav { height: 40px;
+.navbar { height: 40px;
       background-color:transparent;
       width: auto;
       left: 0px;
       text-align: left;
+      word-spacing:0px;
 }
 .nav__a { 
           font-family: $familyRoboto;
-          letter-spacing: normal;
+          letter-spacing: 0px;
+          
           @include fsize (15px);
           padding: 0px;
           margin: 0px;
@@ -45,6 +52,8 @@ nav { height: 40px;
               color: $letterColor;
               text-align: start;
 }
+.margin__galeria { margin: 25px;
+}
 p { color: $letterColor;
     @include fsize ($lettersize);
     font-family: $familyRoboto;
@@ -69,9 +78,7 @@ p { color: $letterColor;
 .p__index { color: $white;
             font-size: 34px;
             text-decoration: overline;
-            font-family: $fontFamily;
-
-
+            font-family: $familyRoboto;
 }
 h1 {@include transform (capitalize);
     @include fsize (55px);
@@ -137,7 +144,8 @@ h3 {font-family:$fontFamily;
 .h3__media { color: $white;
              text-align: center;
              @include fsize (30px);
-
+             padding: 0px;
+             margin: 20px;
 }
 h4{ font-family: $fontFamily;
     @include fsize(20px);
@@ -154,25 +162,19 @@ h4{ font-family: $fontFamily;
          text-align: center;
          padding: 0px;
 }
-.d-flex { border-radius: 5px;
-
-}
-.galeria { 
-           height: 230px;
-           margin:3px;
+.galeria { height: 360px;
            padding: 5px;
-           width: 200px;
+           width: 300px;
 }
-.galeria:hover { box-shadow: 0 0 3px 4px rgba(255, 255, 255, 0.863);
+.galeria:hover { box-shadow: 0 0 1px 4px rgba(255, 255, 255, 0.863);
                  transform: scaleX(-1);
 }
-.galeria__2 {@include sizes (450px, 500px);
+.galeria__2 {@include sizes (400px, 500px);
              padding: 0px;
              background-color: black;
              margin: auto;
 }
 .presupuesto { @include sizes(300px,300px);
-               
 }
 .img__index { width: 200px;
               height: auto;
@@ -186,6 +188,8 @@ h4{ font-family: $fontFamily;
 .d-flex {display: block;
          width: 100%;
          height: auto;
+         border-radius: 3px;
+         @include sizes (500px, 280px)
 }
 .overlay {
     position: absolute;
@@ -194,7 +198,7 @@ h4{ font-family: $fontFamily;
     right: 0;
     background-color: rgba(0, 0, 0, 0.212);
     overflow: hidden;
-    width:450px;
+    width:500px;
     height:0;
     transition: .5s ease;
   }
@@ -221,6 +225,7 @@ h4{ font-family: $fontFamily;
               padding:0px ;
               margin: 0px;
               text-align: center;
+              color: white;
 }
 .card  { width: 300px;
          height: 500px;
@@ -296,9 +301,10 @@ h4{ font-family: $fontFamily;
            margin: auto;
            padding:10px;
 }
-.fab { color: $white;
+.fab { color: white;
+
 }
-.footer {  top: 90px;
+.footer {   top: 90px;
             margin-top:0px;
             padding-top:0px;
             display: inline-block;
@@ -308,15 +314,13 @@ h4{ font-family: $fontFamily;
             background-color: #0c0e1165;
             text-align: center;
             font-family: $fontFamily;
-            @include sizes ($widthMax, 40px);
+            @include sizes ($widthMax,auto);
             position: relative;
             bottom: 0;
             right: 0;
             left: 0;
-            padding: 10px;
-            height: auto;
+            padding:20px;
             .footer__p { color: $white;
                          @include fsize (16px);
-                         
-            }
+                        }
 }
