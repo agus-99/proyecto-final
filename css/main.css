@@ -1,5 +1,5 @@
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: "Bebas Neue", cursive;
   padding: 0px;
   margin: auto;
   background-color: #222831;
@@ -9,7 +9,8 @@ nav {
   height: 40px;
   background-color: transparent;
   width: auto;
-  left: 0px; }
+  left: 0px;
+  text-align: left; }
 
 .nav__a {
   font-family: "Roboto", sans-serif;
@@ -73,14 +74,14 @@ p {
   color: white;
   font-size: 34px;
   text-decoration: overline;
-  font-family: "Oswald", sans-serif; }
+  font-family: "Bebas Neue", cursive; }
 
 h1 {
   text-transform: capitalize;
   font-size: 55px;
   text-align: center;
-  font-family: "Oswald", sans-serif;
-  color: #cccccc;
+  font-family: "Bebas Neue", cursive;
+  color: white;
   letter-spacing: normal;
   word-spacing: 10px;
   padding: 5px; }
@@ -104,7 +105,7 @@ h1 {
 
 h2 {
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Bebas Neue", cursive;
   font-size: 40px;
   line-height: normal;
   text-transform: capitalize;
@@ -117,20 +118,21 @@ h2 {
 
 .h2__media {
   text-align: center;
-  text-decoration: overline;
   margin: 10px;
-  padding: 0px; }
+  padding: 0px;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  text-transform: capitalize; }
 
 h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
   line-height: normal;
   text-transform: capitalize;
-  color: #ffa62b;
+  color: #020202;
   text-align: center;
   margin: 8px;
-  padding: 2px;
-  text-decoration: overline; }
+  padding: 2px; }
 
 .h3__underline {
   text-decoration: underline; }
@@ -141,13 +143,12 @@ h3 {
   margin: 0px; }
 
 .h3__media {
-  color: #ffa62b;
+  color: white;
   text-align: center;
-  text-decoration: overline;
   font-size: 30px; }
 
 h4 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Bebas Neue", cursive;
   font-size: 20px;
   line-height: normal;
   text-transform: capitalize;
@@ -155,13 +156,15 @@ h4 {
   text-align: center; }
 
 .basic {
-  font-family: "Oswald", sans-serif;
+  font-family: "Bebas Neue", cursive;
   text-transform: capitalize;
   font-size: 25px;
-  color: #ffa62b;
+  color: white;
   text-align: center;
-  padding: 0px;
-  text-decoration: overline; }
+  padding: 0px; }
+
+.d-flex {
+  border-radius: 5px; }
 
 .galeria {
   height: 230px;
@@ -170,7 +173,8 @@ h4 {
   width: 200px; }
 
 .galeria:hover {
-  box-shadow: 0 0 3px 4px rgba(255, 255, 255, 0.863); }
+  box-shadow: 0 0 3px 4px rgba(255, 255, 255, 0.863);
+  transform: scaleX(-1); }
 
 .galeria__2 {
   width: 450px;
@@ -244,7 +248,7 @@ h4 {
   margin: auto; }
 
 .card-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Bebas Neue", cursive;
   font-size: 35px; }
 
 .card-text {
@@ -274,7 +278,7 @@ h4 {
   color: #ffa62b;
   text-align: center;
   padding: 0px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Bebas Neue", cursive;
   text-decoration: overline;
   font-size: 15px; }
 
@@ -335,7 +339,7 @@ h4 {
   line-height: 0px;
   background-color: #0c0e1165;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Bebas Neue", cursive;
   width: 100%;
   height: 40px;
   position: relative;
