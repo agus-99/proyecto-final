@@ -1,24 +1,33 @@
 @import "colors" ;
 @import "variables" ;
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+}
 body { font-family: $fontFamily;
        padding: 0px;
        margin: auto;
        background-color: $backColor;
        height: auto;
 }
-.navbar { height: 40px;
+.navbar { @include sizes (auto, auto);
           background-color:transparent;
-          width: auto;
-          left: 0px;
           text-align: left;
-          word-spacing:0px;
 }
-.nav__a { color: white;
+.nav__a { color:white;
           font-family: $familyRoboto;
           letter-spacing: 0px;
-         @include fsize (15px);
+          @include fsize (13px);
           padding: 0px;
           margin: 0px;
+}
+.nav__a__index {color:black;
+                font-family: $familyRoboto;
+                letter-spacing: 0px;
+                @include fsize (13px);
+                padding: 0px;
+                margin: 0px;
 }
 .nav__center {
               position: absolute;
@@ -307,7 +316,7 @@ h4{ font-family: $fontFamily;
             background-color: #0c0e1165;
             text-align: center;
             font-family: $fontFamily;
-            @include sizes ($widthMax,auto);
+            @include sizes ( 100% ,auto);
             position: relative;
             bottom: 0;
             right: 0;
