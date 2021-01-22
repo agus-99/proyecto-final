@@ -1,10 +1,5 @@
 @import "colors" ;
 @import "variables" ;
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-}
 body { font-family: $fontFamily;
        padding: 0px;
        margin: auto;
@@ -13,7 +8,7 @@ body { font-family: $fontFamily;
 }
 .navbar { @include sizes (auto, auto);
           background-color:transparent;
-          text-align: left;
+          text-align: left; 
 }
 .nav__a { color:white;
           font-family: $familyRoboto;
@@ -25,7 +20,7 @@ body { font-family: $fontFamily;
 .nav__a__index {color:black;
                 font-family: $familyRoboto;
                 letter-spacing: 0px;
-                @include fsize (13px);
+                @include fsize (14px);
                 padding: 0px;
                 margin: 0px;
 }
