@@ -24,6 +24,12 @@ body { font-family: $fontFamily;
                 padding: 0px;
                 margin: 0px;
 }
+.nav__a:hover { color:$pink;
+
+}
+.nav__a__index:hover { color:$white
+
+}
 .nav__center {
               position: absolute;
 }
@@ -38,12 +44,16 @@ body { font-family: $fontFamily;
          left: 250px;
 
 }
+.fab { color: white;
+}
+.fab:hover {color: $pink;
+
+}
 .background__contacto { background-image: url(../imagenes/estudio.jpg);
                         padding: 50px;
                         margin: auto;
                         width: $widthMax;
                         height: 700px;
-
 }
 .text-media { font-size: 14px;
               color: $letterColor;
@@ -89,7 +99,7 @@ h1 {@include transform (capitalize);
 
 .h1__rosa{font-family: 'Abril Fatface', cursive;
           letter-spacing: normal;  
-          color: #ffbbb4;
+          color: $pink;
           @include fsize (120px);
           @include transform (capitalize);
           padding: 0px;
@@ -123,6 +133,9 @@ h2 {text-align: center;
             font-family: $fontFamily;
             @include transform (capitalize);
 }
+.h2__media:hover {color:$pink;
+
+}
 h3 {font-family:$fontFamily;
     @include fsize (30px);
     line-height: normal;
@@ -139,11 +152,19 @@ h3 {font-family:$fontFamily;
             margin: 0px;
 }
 .h3__media { color: $white;
-             text-align: center;
+             text-align: start;
              @include fsize (30px);
              padding: 0px;
              margin: 20px;
+             background:transparent;
+             position: relative;
+             animation: mymove 5s infinite;
 }
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+  }
+
 h4{ font-family: $fontFamily;
     @include fsize(20px);
     line-height: normal;
@@ -172,6 +193,11 @@ h4{ font-family: $fontFamily;
              margin: auto;
 }
 .presupuesto { @include sizes(300px,300px);
+    border: 1px solid;
+    padding: 2px;
+    box-shadow: 5px 10px 18px white;
+    border-radius: 10px;
+    
 }
 .img__index { width: 200px;
               height: auto;
@@ -228,17 +254,20 @@ h4{ font-family: $fontFamily;
          height: 500px;
          background-color:transparent;
          margin:auto;
+         text-align: center;
 }
 .card-title { font-family: $fontFamily; 
               font-size: 35px;
+              text-align: center;
 }
 .card-text { color: white; 
              @include fsize(15px);
              font-family: $familyRoboto;
              @include transform (capitalize);
              line-height: 0px;
+             text-align: center;
 }
-.animacion {animation-duration: 4s;
+.animacion {animation-duration: 7s;
             animation-name: aparecer;
 }
 @keyframes aparecer {
