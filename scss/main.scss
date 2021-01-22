@@ -20,7 +20,7 @@ body { font-family: $fontFamily;
 .nav__a__index {color:black;
                 font-family: $familyRoboto;
                 letter-spacing: 0px;
-                @include fsize (14px);
+                @include fsize (13px);
                 padding: 0px;
                 margin: 0px;
 }
