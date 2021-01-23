@@ -1,5 +1,11 @@
 @import "colors" ;
 @import "variables" ;
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
 body { font-family: $fontFamily;
        padding: 0px;
        margin: auto;
@@ -274,7 +280,7 @@ h4{ font-family: $fontFamily;
              line-height: 0px;
              text-align: center;
 }
-.animacion {animation-duration: 7s;
+.animacion {animation-duration: 8s;
             animation-name: aparecer;
 }
 @keyframes aparecer {
@@ -326,8 +332,8 @@ h4{ font-family: $fontFamily;
             align-items: center;
 }
 .grid__5 { display: grid;
-           grid-template-columns: 300px 300px 300px;
-           grid-template-rows: 500px;
+           grid-template-columns: auto auto auto;
+           grid-template-rows: auto;
            grid-column-gap: 20px;
            justify-content: center;
            justify-items: center;
