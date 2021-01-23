@@ -1,15 +1,42 @@
 @import "colors" ;
 @import "variables" ;
 
-@media only screen and (max-width: 600px) {
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px)  {
     body {
       background-color: lightblue;
     }
   }
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    body { background-color: yellow;
+
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body { background-color: green;
+
+    }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body { background-color: black;
+
+    }
+
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    body { background-color: white;
+
+    }
+
+}
 body { font-family: $fontFamily;
+       background-color: $backColor;
        padding: 0px;
        margin: auto;
-       background-color: $backColor;
        height: auto;
 }
 .navbar { @include sizes (auto, auto);
@@ -33,11 +60,9 @@ body { font-family: $fontFamily;
 .nav__a:hover { color:$pink;
 
 }
-.nav__a__index:hover { color:$white
-
+.nav__a__index:hover { color:$white;
 }
-.nav__center {
-              position: absolute;
+.nav__center { position: absolute;
 }
 .container__h1 { position: relative;
 }
@@ -48,12 +73,10 @@ body { font-family: $fontFamily;
 .center{ position: absolute;  
          top: 45%;
          left: 250px;
-
 }
 .fab { color: white;
 }
 .fab:hover {color: $pink;
-
 }
 .background__contacto { background-image: url(../imagenes/estudio.jpg);
                         padding: 50px;
@@ -79,90 +102,79 @@ p { color: $letterColor;
     padding: 5px;
     text-align: center;
 }
-.p__contacto {@include fsize(18px);
-    color: $letterColor;
-    @include transform (capitalize);
-    padding: 0px;
-    margin: 0px;
-    text-align: start;
-    line-height: 20px;
-    padding: 5px;
+.p__contacto { @include fsize(18px);
+               color: $letterColor;
+               @include transform (capitalize);
+               padding: 0px;
+               margin: 0px;
+               text-align: start;
+               line-height: 20px;
+               padding: 5px;
 }
 .p__index { color: $white;
             font-size: 34px;
             text-decoration: overline;
             font-family: $familyRoboto;
 }
-h1 {@include transform (capitalize);
-    @include fsize (55px);
-    text-align: center;
-    font-family: $fontFamily;
-    color: $white;
-    letter-spacing: normal;
-    word-spacing: 10px;
-    padding: 5px;
+h1 { @include transform (capitalize);
+     @include fsize (55px);
+     text-align: center;
+     font-family: $fontFamily;
+     color: $white;
+     letter-spacing: normal;
+     word-spacing: 10px;
+     padding: 5px;
 }
-
-.h1__rosa{font-family: 'Abril Fatface', cursive;
-          letter-spacing: normal;  
-          color: $pink;
-          @include fsize (120px);
-          @include transform (capitalize);
-          padding: 0px;
-          align-items: center;
-        
-          
+.h1__rosa{ font-family: 'Abril Fatface', cursive;
+           letter-spacing: normal;  
+           color: $pink;
+           @include fsize (120px);
+           @include transform (capitalize);
+           padding: 0px;
+           align-items: center;
 }
 .recuadro__h1 { display: flex;
                 background-color: transparent;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-                margin:auto;
+                margin: auto;
 } 
-h2 {text-align: center;
-    font-family: $fontFamily;
-    font-size: 40px;
-    line-height: normal;
-    @include transform(capitalize);
-    @include fsize(40px);
-    color: $h2Color;
-    letter-spacing: normal;
-    word-spacing: normal;
-    margin:auto;
-    padding: 0px;
+h2 { text-align: center;
+     font-family: $fontFamily;
+     line-height: normal;
+     @include transform(capitalize);
+     @include fsize(40px);
+     color: $h2Color;
+     letter-spacing: normal;
+     word-spacing: normal;
+     margin: auto;
+     padding: 0px;
 }
-.h2__media {text-align: center;
-            margin: 10px;
-            padding: 0px;
-            color: white;
-            font-family: $fontFamily;
-            @include transform (capitalize);
+.h2__media { text-align: center;
+             margin: 10px;
+             padding: 0px;
+             color: $white;
+             font-family: $fontFamily;
+             @include transform (capitalize);
 }
-.h2__media:hover {color:$pink;
-
+.h2__media:hover {color: $pink;
 }
-h3 {font-family:$fontFamily;
-    @include fsize (30px);
-    line-height: normal;
-    @include transform(capitalize);
-    color: rgb(2, 2, 2);
-    text-align: center;
-    margin: 8px;
-    padding: 2px;
-}
-.h3__underline { text-decoration: underline;
-}
-.h3__left { text-align: start;
-            color: $h3Color;
-            margin: 0px;
+h3 { font-family: $fontFamily;
+     @include fsize (30px);
+     line-height: normal;
+     @include transform(capitalize);
+     color: black;
+     text-align: center;
+     margin: 8px;
+     padding: 2px;
 }
 .h3__media { color: $white;
              text-align: start;
              @include fsize (30px);
              padding: 0px;
              margin: 20px;
-             background:transparent;
+             background: transparent;
              position: relative;
              animation: mymove 5s infinite;
 }
@@ -170,12 +182,12 @@ h3 {font-family:$fontFamily;
     from {left: 0px;}
     to {left: 200px;}
 }
-.h3__animation {   border-radius: 10px;
-                   width: auto;
-                   height: auto;
-                   background-color: white;
-                   animation-name: example;
-                   animation-duration: 5s;
+.h3__animation { border-radius: 10px;
+                 width: auto;
+                 height: auto;
+                 background-color: $white;
+                 animation-name: example;
+                 animation-duration: 5s;
 }
 @keyframes example {
     from {background-color: black;}
@@ -188,7 +200,6 @@ h4{ font-family: $fontFamily;
     color: $h4Color;
     text-align: center; 
 } 
-
 .basic { font-family: $fontFamily;
          @include transform(capitalize);
          @include fsize (25px);
@@ -211,11 +222,9 @@ h4{ font-family: $fontFamily;
 .presupuesto { width: 300px;
               height: 300px;
               border-radius: 10px;
-
 }
 .img__index { width: 200px;
               height: auto;
-
 }
 .rounded-cirlce{ @include sizes(200px,200px);
 }
@@ -239,26 +248,25 @@ h4{ font-family: $fontFamily;
     height:0;
     transition: .5s ease;
   }
-  .container:hover .overlay {
-    bottom: 0;
-    height: 100%;
+.container:hover .overlay { bottom: 0;
+                            height: 100%;
 }
 .text { font-family: $familyRoboto;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
 }
 .media { margin: auto;
          padding: 5px;
 }
 .text-media { width: auto;
-              padding:0px ;
+              padding: 0px;
               margin: 0px;
               text-align: center;
               color: white;
@@ -270,11 +278,11 @@ h4{ font-family: $fontFamily;
          text-align: center;
 }
 .card-title { font-family: $fontFamily; 
-              font-size: 35px;
+              @include fsize (35px);
               text-align: center;
 }
 .card-text { color: white; 
-             @include fsize(15px);
+             @include fsize (15px);
              font-family: $familyRoboto;
              @include transform (capitalize);
              line-height: 0px;
@@ -295,41 +303,14 @@ h4{ font-family: $fontFamily;
           margin: 0px;
           padding: 0px;
 }
-.card-body-d {color: $h3Color;
-              text-align: center;
-              padding: 0px;
-              font-family:$fontFamily;
-              text-decoration: overline;
-              @include fsize(15px);
+.card-body-d { @include fsize(15px);
+               color: $h3Color;
+               text-align: center;
+               padding: 0px;
+               font-family:$fontFamily;
+               text-decoration: overline;
 }
 .card-link { color: $pink;
-}
-
-.carrousel { margin: 20px;
-}
-.button_1 { float: left;
-            margin: 17px;
-}
-.button_2 { float: right;
-            margin: 17px;
-}
-.grid__1 { display: grid;
-           grid-template-columns:200px 200px  200px 200px 200px ;
-           grid-template-rows: auto;
-           grid-column-gap: 20px;
-           margin: auto;
-           padding: 5px;
-           justify-content: center;
-           align-items: center;
-}
-.grid__1i { display: grid;
-            grid-template-columns:300px 300px 300px;
-            grid-template-rows: auto;
-            grid-column-gap: 20px;
-            margin: 100px;
-            padding: 10px;
-            justify-content: center;
-            align-items: center;
 }
 .grid__5 { display: grid;
            grid-template-columns: auto auto auto;
@@ -338,28 +319,28 @@ h4{ font-family: $fontFamily;
            justify-content: center;
            justify-items: center;
            margin: auto;
-           padding:10px;
+           padding: 10px;
 }
 .fab { color: white;
-
 }
-.footer {   top: 90px;
-            margin-top:0px;
-            padding-top:0px;
-            display: inline-block;
-            letter-spacing: normal;
-            word-spacing: normal;  
-            line-height: 0px;
-            background-color: #0c0e1165;
-            text-align: center;
-            font-family: $fontFamily;
-            @include sizes ( 100% ,auto);
-            position: relative;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            padding:20px;
-            .footer__p { color: $white;
-                         @include fsize (16px);
-                        }
+.footer { top: 90px;
+          margin-top:0px;
+          padding-top:0px;
+          display: inline-block;
+          letter-spacing: normal;
+          word-spacing: normal;  
+          line-height: 0px;
+          background-color: #0c0e1165;
+          text-align: center;
+          font-family: $fontFamily;
+          @include sizes ( 100% ,auto);
+          position: relative;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          padding:20px;
 }
+.footer__p { color: $white;
+                        @include fsize (16px);
+                    
+                }
