@@ -115,9 +115,11 @@ p {
 
 .p__index {
   color: white;
-  font-size: 34px;
+  font-size: 24px;
   text-decoration: overline;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  margin: auto; }
 
 h1 {
   text-transform: capitalize;
@@ -193,7 +195,7 @@ h3 {
   from {
     left: 0px; }
   to {
-    left: 200px; } }
+    left: 100px; } }
 
 .h3__animation {
   border-radius: 10px;
@@ -244,7 +246,7 @@ h4 {
 .presupuesto {
   width: 300px;
   height: 300px;
-  border-radius: 10px; }
+  border-radius: 15px 50px; }
 
 .img__index {
   width: 200px;
@@ -280,6 +282,16 @@ h4 {
 .container:hover .overlay {
   bottom: 0;
   height: 100%; }
+
+.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px; }
+
+.container__polaroid {
+  text-align: center;
+  padding: 10px 20px; }
 
 .text {
   font-family: "Roboto", sans-serif;
