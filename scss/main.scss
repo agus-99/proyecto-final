@@ -204,19 +204,18 @@ h4{ font-family: $fontFamily;
          width: 100%;
          height: auto;
          border-radius: 3px;
-         @include sizes (500px, 280px)
+         @include sizes (500px, 280px);
 }
-.overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.212);
-    overflow: hidden;
-    width:500px;
-    height:0;
-    transition: .5s ease;
-  }
+.overlay { position: absolute;
+           bottom: 100%;
+           left: 0;
+           right: 0;
+           background-color: rgba(0, 0, 0, 0.212);
+           overflow: hidden;
+           width:500px;
+           height:0;
+           transition: .5s ease;
+}
 .container:hover .overlay { bottom: 0;
                             height: 100%;
 }
