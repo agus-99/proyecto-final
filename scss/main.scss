@@ -1,37 +1,11 @@
 @import "colors" ;
 @import "variables" ;
 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px)  {
-    body {
-      background-color: lightblue;
-    }
-  }
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    body { background-color: yellow;
+@media only screen and (max-width:768px) 
+{
+    h1 { color: red;
 
     }
-}
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {
-    body { background-color: green;
-
-    }
-}
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    body { background-color: black;
-
-    }
-
-}
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-    body { background-color: white;
-
-    }
-
 }
 body { font-family: $fontFamily;
        background-color: $backColor;
@@ -209,20 +183,20 @@ h4{ font-family: $fontFamily;
          text-align: center;
          padding: 0px;
 }
-.galeria { height: 360px;
-           padding: 5px;
+.galeria { padding: 5px;
            width: 300px;
+           height: 360px;
 }
 .galeria:hover { box-shadow: 0 0 1px 4px rgba(255, 255, 255, 0.863);
                  transform: scaleX(-1);
 }
-.galeria__2 {@include sizes (400px, 500px);
+.galeria__2 {@include sizes (450px, auto);
              padding: 0px;
              background-color: black;
              margin: auto;
 }
 .presupuesto { width: 300px;
-               height: 300px;
+               height: 320px;
                border-radius: 15px 50px;
 }
 .img__index { width: 200px;
