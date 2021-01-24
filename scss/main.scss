@@ -3,18 +3,15 @@
 @import "media";
 body { font-family: $fontFamily;
        background-color: $backColor;
-       padding: 0px;
-       margin: auto;
        height: auto;
 }
-.navbar { @include sizes (auto, auto);
-          background-color:transparent;
-          text-align: left; 
+.navbar { background-color:transparent;
+          text-align: start; 
 }
-.nav__a { color:white;
+.nav__a { @include fsize (13px);
+          color:white;
           font-family: $familyRoboto;
           letter-spacing: 0px;
-          @include fsize (13px);
           padding: 0px;
           margin: 0px;
 }
@@ -33,23 +30,16 @@ body { font-family: $fontFamily;
 }
 .container__h1 { position: relative;
 }
-.section__img { width: $widthMax;
-                height: 100%;
+.section__img { @include sizes($widthMax:100%);
                 margin: auto;
 }
 .center{ position: absolute;  
          top: 45%;
          left: 250px;
 }
-.fab { color: white;
+.fab { color: $white;
 }
 .fab:hover {color: $pink;
-}
-.background__contacto { background-image: url(../imagenes/estudio.jpg);
-                        padding: 50px;
-                        margin: auto;
-                        width: $widthMax;
-                        height: 700px;
 }
 .text-media { font-size: 14px;
               color: $letterColor;
@@ -57,95 +47,74 @@ body { font-family: $fontFamily;
 }
 .margin__galeria { margin: 25px;
 }
-p { color: $letterColor;
-    @include fsize ($lettersize);
+p { @include fsize ($lettersize);
+    @include transform(capitalize);
+    color: $letterColor;
     font-family: $familyRoboto;
-    @include transform(capitalize); 
     text-decoration: none;
-    text-transform: inherit;
     letter-spacing: normal;
     word-spacing: normal;
     line-height: normal;
     padding: 5px;
     text-align: center;
 }
-.p__contacto { @include fsize(18px);
-               color: $letterColor;
-               @include transform (capitalize);
-               padding: 0px;
-               margin: 0px;
-               text-align: start;
+.p__contacto { text-align: start;
                line-height: 20px;
                padding: 5px;
+               margin: 0px;
 }
-.p__index { color: $white;
-            @include fsize (24px);
+.p__index { @include fsize (24px);
             text-decoration: overline;
-            font-family: $familyRoboto;
             padding: 10px;
             margin: auto;
 }
 h1 { @include transform (capitalize);
      @include fsize (55px);
+     color: $white;
      text-align: center;
      font-family: $fontFamily;
-     color: $white;
      letter-spacing: normal;
      word-spacing: 10px;
      padding: 5px;
 }
-.h1__rosa{ font-family: 'Abril Fatface', cursive;
-           letter-spacing: normal;  
+.h1__rosa{ font-family: 'Abril Fatface', cursive; 
            color: $pink;
            @include fsize (120px);
-           @include transform (capitalize);
            padding: 0px;
-           align-items: center;
-}
-.recuadro__h1 { display: flex;
-                background-color: transparent;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                margin: auto;
 } 
-h2 { text-align: center;
-     font-family: $fontFamily;
-     line-height: normal;
-     @include transform(capitalize);
+h2 { @include transform(capitalize);
      @include fsize(40px);
      color: $h2Color;
+     font-family: $fontFamily;
+     text-align: center;
+     line-height: normal;
      letter-spacing: normal;
      word-spacing: normal;
      margin: auto;
      padding: 0px;
 }
-.h2__media { text-align: center;
-             margin: 10px;
-             padding: 0px;
+.h2__media { margin: 10px;
              color: $white;
              font-family: $fontFamily;
-             @include transform (capitalize);
 }
 .h2__media:hover {color: $pink;
 }
-h3 { font-family: $fontFamily;
-     @include fsize (30px);
-     line-height: normal;
+h3 { @include fsize (30px);
      @include transform(capitalize);
-     color: black;
+     color: $h3Color;
+     font-family: $fontFamily;
      text-align: center;
+     line-height: normal;
      margin: 8px;
      padding: 2px;
 }
 .h3__media { color: $white;
              text-align: start;
-             @include fsize (30px);
-             padding: 0px;
-             margin: 20px;
              background: transparent;
              position: relative;
              animation: mymove 5s infinite;
+             padding: 0px;
+             margin: 20px;
 }
 @keyframes mymove {
     from {left: 0px;}
@@ -162,107 +131,85 @@ h3 { font-family: $fontFamily;
     from {background-color: black;}
     to {background-color: white;}
   }
-h4{ font-family: $fontFamily;
-    @include fsize(20px);
-    line-height: normal;
+h4{ @include fsize(20px);
     @include transform(capitalize);
     color: $h4Color;
+    font-family: $fontFamily;
+    line-height: normal;
     text-align: center; 
 } 
-.basic { font-family: $fontFamily;
-         @include transform(capitalize);
+.basic { @include transform(capitalize);
          @include fsize (25px);
          color: $white;
+         font-family: $fontFamily;
          text-align: center;
          padding: 0px;
 }
 .galeria { padding: 5px;
-           width: 300px;
-           height: 360px;
+           @include sizes (300px, 360px);
 }
 .galeria:hover { box-shadow: 0 0 1px 4px rgba(255, 255, 255, 0.863);
                  transform: scaleX(-1);
 }
 .galeria__2 {@include sizes (450px, auto);
-             padding: 0px;
              background-color: black;
              margin: auto;
+             padding: 0px;
 }
-.presupuesto { width: 300px;
-               height: 320px;
+.presupuesto { @include sizes(300px,320px);
                border-radius: 15px 50px;
-}
-.img__index { width: 200px;
-              height: auto;
-}
-.rounded-cirlce{ @include sizes(200px,200px);
 }
 .container__media { position: relative;
                     width: 50%;
 }
-.d-flex {display: block;
-         width: 100%;
-         height: auto;
-         border-radius: 3px;
+.d-flex { border-radius: 3px;
          @include sizes (500px, 280px);
 }
-.overlay { position: absolute;
+.overlay { @include sizes (500px, 0px);
+           position: absolute;
            bottom: 100%;
            left: 0;
            right: 0;
            background-color: rgba(0, 0, 0, 0.212);
            overflow: hidden;
-           width:500px;
-           height:0;
            transition: .5s ease;
 }
 .container:hover .overlay { bottom: 0;
                             height: 100%;
 }
-.polaroid { width: 80%;
-            background-color: white;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            margin-bottom: 25px;
-}
-.container__polaroid { text-align: center;
-                       padding: 10px 20px;
-}
-.text { font-family: $familyRoboto;
-        color: white;
-        font-size: 20px;
+.text { color: white;
+        font-family: $familyRoboto;
+        text-align: center;
+        @include fsize (20px);
         position: absolute;
         top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        text-align: center;
 }
 .media { margin: auto;
          padding: 5px;
 }
 .text-media { width: auto;
-              padding: 0px;
-              margin: 0px;
               text-align: center;
               color: white;
+              padding: 0px;
+              margin: 0px;
 }
-.card  { width: 300px;
-         height: 500px;
+.card  { @include sizes (300px,500px);
          background-color:transparent;
          margin:auto;
          text-align: center;
 }
 .card-title { font-family: $fontFamily; 
               @include fsize (35px);
-              text-align: center;
 }
-.card-text { color: white; 
-             @include fsize (15px);
-             font-family: $familyRoboto;
+.card-text { @include fsize (15px);
              @include transform (capitalize);
+             color: white; 
+             font-family: $familyRoboto;
              line-height: 0px;
-             text-align: center;
 }
 .animacion {animation-duration: 8s;
             animation-name: aparecer;
@@ -275,19 +222,6 @@ h4{ font-family: $fontFamily;
         opacity: 1;
     }
 }
-.card-d { @include sizes (300px, 300px);
-          margin: 0px;
-          padding: 0px;
-}
-.card-body-d { @include fsize(15px);
-               color: $h3Color;
-               text-align: center;
-               padding: 0px;
-               font-family:$fontFamily;
-               text-decoration: overline;
-}
-.card-link { color: $pink;
-}
 .grid__5 { display: grid;
            grid-template-columns: auto auto auto;
            grid-template-rows: auto;
@@ -297,7 +231,7 @@ h4{ font-family: $fontFamily;
            margin: auto;
            padding: 10px;
 }
-.fab { color: white;
+.fab { color:$white;
 }
 .footer { top: 90px;
           margin-top:0px;

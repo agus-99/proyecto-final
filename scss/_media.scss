@@ -1,13 +1,6 @@
 @media only screen and (max-width: 768px)
 {
-    .h1__rosa{ font-size: 5px;
-               background-color:red;
-               margin:auto;
+    .h1__rosa{ background-color: red;
+               color: blue;
             }
-            .d-flex {display: block;
-                     width: 100%;
-                     height: auto;
-                     border-radius: 3px;
-                     @include sizes (500px, 280px);
-       }
-        }
+    }
