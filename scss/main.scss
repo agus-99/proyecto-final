@@ -339,8 +339,8 @@ h4{ @include fsize(20px);
            from {left: 0px;}
            to {left: 15px;}
        }
-    .galeria { @include sizes (60px, 65px);
-               padding: 5px;
+    .galeria { @include sizes (150px, 150px);
+               padding: 3px;
                margin: auto;
             }
     .galeria__2 { @include sizes (300px, auto);

@@ -400,9 +400,9 @@ h4 {
     to {
       left: 15px; } }
   .galeria {
-    width: 60px;
-    height: 65px;
-    padding: 5px;
+    width: 150px;
+    height: 150px;
+    padding: 3px;
     margin: auto; }
   .galeria__2 {
     width: 300px;
