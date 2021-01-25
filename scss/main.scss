@@ -27,8 +27,7 @@ body { font-family: $fontFamily;
 }
 .nav__center { position: absolute;
 }
-.section__img { @include sizes($widthMax, 100%);
-                margin: auto;
+.section__img { @include sizes($widthMax, auto);
 }
 .center{ position: absolute;  
          top: 45%;
@@ -260,9 +259,6 @@ h4{ @include fsize(20px);
              top: 40%;
              left: 40px;
     }
-    .section__img { @include sizes (100%,100%);
-
-    }
     .h1__rosa{ font-family: 'Abril Fatface', cursive; 
                color: $pink;
                @include fsize (50px);
@@ -287,6 +283,17 @@ h4{ @include fsize(20px);
                   padding: 0px;
                   margin: 0px;
                   @include fsize (10px);
+                }
+  .galeria { @include sizes (133px, 150px);
+             padding: 5px;
+             margin: auto;
+
+  }
+  .galeria__2 { @include sizes (200px, auto);
+                background-color: black;
+                margin: auto;
+                padding: 0px;
+
   }
 
 }
