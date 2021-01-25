@@ -1,12 +1,11 @@
-@media only screen and (max-width: 768px) {
-  .h1__rosa {
-    font-size: 5px;
-    background-color: red;
-    margin: auto; }
-  .d-flex {
-    width: 10px;
+@media (max-width: 768px) {
+  .center {
+    background-color: blue;
+    width: auto;
     height: auto;
-    border-radius: 3px; } }
+    position: absolute; }
+  .h1__rosa {
+    background-color: red; } }
 
 body {
   font-family: "Bebas Neue", cursive;
@@ -42,9 +41,6 @@ body {
 .nav__center {
   position: absolute; }
 
-.container__h1 {
-  position: relative; }
-
 .section__img {
   width: 100%;
   height: 100%;
@@ -61,13 +57,6 @@ body {
 .fab:hover {
   color: #ffbbb4; }
 
-.background__contacto {
-  background-image: url(../imagenes/estudio.jpg);
-  padding: 50px;
-  margin: auto;
-  width: 100%;
-  height: 700px; }
-
 .text-media {
   font-size: 14px;
   color: white;
@@ -77,12 +66,11 @@ body {
   margin: 25px; }
 
 p {
-  color: white;
   font-size: 18px;
-  font-family: "Roboto", sans-serif;
   text-transform: capitalize;
+  color: white;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
-  text-transform: inherit;
   letter-spacing: normal;
   word-spacing: normal;
   line-height: normal;
@@ -90,92 +78,71 @@ p {
   text-align: center; }
 
 .p__contacto {
-  font-size: 18px;
-  color: white;
-  text-transform: capitalize;
-  padding: 0px;
-  margin: 0px;
   text-align: start;
   line-height: 20px;
-  padding: 5px; }
+  padding: 5px;
+  margin: 0px; }
 
 .p__index {
-  color: white;
   font-size: 24px;
   text-decoration: overline;
-  font-family: "Roboto", sans-serif;
   padding: 10px;
   margin: auto; }
 
 h1 {
   text-transform: capitalize;
   font-size: 55px;
+  color: white;
   text-align: center;
   font-family: "Bebas Neue", cursive;
-  color: white;
   letter-spacing: normal;
   word-spacing: 10px;
   padding: 5px; }
 
 .h1__rosa {
   font-family: 'Abril Fatface', cursive;
-  letter-spacing: normal;
   color: #ffbbb4;
   font-size: 120px;
-  text-transform: capitalize;
-  padding: 0px;
-  align-items: center; }
-
-.recuadro__h1 {
-  display: flex;
-  background-color: transparent;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: auto; }
+  padding: 0px; }
 
 h2 {
-  text-align: center;
-  font-family: "Bebas Neue", cursive;
-  line-height: normal;
   text-transform: capitalize;
   font-size: 40px;
   color: #cccccc;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  line-height: normal;
   letter-spacing: normal;
   word-spacing: normal;
   margin: auto;
   padding: 0px; }
 
 .h2__media {
-  text-align: center;
   margin: 10px;
-  padding: 0px;
   color: white;
-  font-family: "Bebas Neue", cursive;
-  text-transform: capitalize; }
+  font-family: "Bebas Neue", cursive; }
 
 .h2__media:hover {
   color: #ffbbb4; }
 
 h3 {
-  font-family: "Bebas Neue", cursive;
   font-size: 30px;
-  line-height: normal;
   text-transform: capitalize;
-  color: black;
+  color: #ffa62b;
+  font-family: "Bebas Neue", cursive;
   text-align: center;
+  line-height: normal;
   margin: 8px;
   padding: 2px; }
 
 .h3__media {
   color: white;
   text-align: start;
-  font-size: 30px;
-  padding: 0px;
-  margin: 20px;
   background: transparent;
   position: relative;
-  animation: mymove 5s infinite; }
+  animation: mymove 5s infinite;
+  padding: 0px;
+  margin: 20px; }
 
 @keyframes mymove {
   from {
@@ -198,18 +165,18 @@ h3 {
     background-color: white; } }
 
 h4 {
-  font-family: "Bebas Neue", cursive;
   font-size: 20px;
-  line-height: normal;
   text-transform: capitalize;
   color: #393e46;
+  font-family: "Bebas Neue", cursive;
+  line-height: normal;
   text-align: center; }
 
 .basic {
-  font-family: "Bebas Neue", cursive;
   text-transform: capitalize;
   font-size: 25px;
   color: white;
+  font-family: "Bebas Neue", cursive;
   text-align: center;
   padding: 0px; }
 
@@ -225,22 +192,14 @@ h4 {
 .galeria__2 {
   width: 450px;
   height: auto;
-  padding: 0px;
   background-color: black;
-  margin: auto; }
+  margin: auto;
+  padding: 0px; }
 
 .presupuesto {
   width: 300px;
   height: 320px;
   border-radius: 15px 50px; }
-
-.img__index {
-  width: 200px;
-  height: auto; }
-
-.rounded-cirlce {
-  width: 200px;
-  height: 200px; }
 
 .container__media {
   position: relative;
@@ -252,41 +211,31 @@ h4 {
   height: 280px; }
 
 .overlay {
+  width: 500px;
+  height: 0px;
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.212);
   overflow: hidden;
-  width: 500px;
-  height: 0;
   transition: .5s ease; }
 
 .container:hover .overlay {
   bottom: 0;
   height: 100%; }
 
-.polaroid {
-  width: 80%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px; }
-
-.container__polaroid {
-  text-align: center;
-  padding: 10px 20px; }
-
 .text {
-  font-family: "Roboto", sans-serif;
   color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
   font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  transform: translate(-50%, -50%); }
 
 .media {
   margin: auto;
@@ -294,10 +243,10 @@ h4 {
 
 .text-media {
   width: auto;
-  padding: 0px;
-  margin: 0px;
   text-align: center;
-  color: white; }
+  color: white;
+  padding: 0px;
+  margin: 0px; }
 
 .card {
   width: 300px;
@@ -308,16 +257,14 @@ h4 {
 
 .card-title {
   font-family: "Bebas Neue", cursive;
-  font-size: 35px;
-  text-align: center; }
+  font-size: 35px; }
 
 .card-text {
-  color: white;
   font-size: 15px;
-  font-family: "Roboto", sans-serif;
   text-transform: capitalize;
-  line-height: 0px;
-  text-align: center; }
+  color: white;
+  font-family: "Roboto", sans-serif;
+  line-height: 0px; }
 
 .animacion {
   animation-duration: 8s;
@@ -328,23 +275,6 @@ h4 {
     opacity: 0; }
   100% {
     opacity: 1; } }
-
-.card-d {
-  width: 300px;
-  height: 300px;
-  margin: 0px;
-  padding: 0px; }
-
-.card-body-d {
-  font-size: 15px;
-  color: #ffa62b;
-  text-align: center;
-  padding: 0px;
-  font-family: "Bebas Neue", cursive;
-  text-decoration: overline; }
-
-.card-link {
-  color: #ffbbb4; }
 
 .grid__5 {
   display: grid;

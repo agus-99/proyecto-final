@@ -1,6 +1,11 @@
-@media only screen and (max-width: 768px)
-{
-    .h1__rosa{ background-color: red;
-               color: blue;
-            }
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 768px) {
+    .center {
+        background-color:blue;
+        @include sizes (auto, auto);
+        position: absolute;
     }
+    .h1__rosa { background-color: red;
+
+    }
+}
