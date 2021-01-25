@@ -152,6 +152,8 @@ h4{ @include fsize(20px);
              margin: auto;
              padding: 0px;
 }
+.rounded-circle { @include sizes (350px,350px);
+}
 .presupuesto { @include sizes(300px,320px);
                border-radius: 15px 50px;
 }
@@ -185,7 +187,7 @@ h4{ @include fsize(20px);
         transform: translate(-50%, -50%);
 }
 .media { margin: auto;
-         padding: 5px;
+         padding: 10px;
 }
 .text-media { width: auto;
               text-align: center;
@@ -296,9 +298,9 @@ h4{ @include fsize(20px);
               padding: 0px;
             }
     .d-flex { border-radius: 3px;
-             @include sizes (250px,auto);
+             @include sizes (350px ,auto);
             }
-    .overlay { @include sizes (250px, 0px);
+    .overlay { @include sizes (290px, 0px);
                 position: absolute;
                 bottom: 100%;
                 left: 0;
@@ -318,29 +320,43 @@ h4{ @include fsize(20px);
     .text-media { width: auto;
                   text-align: center;
                   color: white;
-                  padding: 0px;
+                  padding: 5px;
                   margin: 0px;
-                  @include fsize (10px);
+                  @include fsize (13px);
                 }
-  .galeria { @include sizes (133px, 150px);
-             padding: 5px;
-             margin: auto;
+    .rounded-circle { @include sizes (200px,200px);
+                }
+    .h3__media { color: $white;
+                 text-align: start;
+                 background: transparent;
+                 position: relative;
+                 animation: mymove 5s infinite;
+                 padding: 0px;
+                 margin: auto;
+                 @include fsize(20px);
+       }
+       @keyframes mymove {
+           from {left: 0px;}
+           to {left: 15px;}
+       }
+    .galeria { @include sizes (60px, 65px);
+               padding: 5px;
+               margin: auto;
             }
-  .galeria__2 { @include sizes (200px, auto);
+    .galeria__2 { @include sizes (300px, auto);
                 background-color: black;
                 margin: auto;
                 padding: 0px;
             }
-  .basic { @include fsize (25px);
+    .basic { @include fsize (25px);
            padding: 0px;
-
-  }
-  .card {@include sizes (250px,auto);
+        }
+    .card {@include sizes (250px,auto);
           margin: auto;
         }
-  .card-text { @include fsize (12px);
-   }
-  .grid__5 { display: grid;
+    .card-text { @include fsize (12px);
+    }
+    .grid__5 { display: grid;
              grid-template-columns: auto;
              grid-template-rows: auto auto auto;
              grid-row-gap: 10px;
@@ -348,8 +364,8 @@ h4{ @include fsize(20px);
              justify-items: center;
              margin:0px;
              padding: 0px;
-     }
-     .presupuesto { @include sizes (250px,260px);
+            }
+    .presupuesto { @include sizes (250px,260px);
                     padding: 0px;
 
      }

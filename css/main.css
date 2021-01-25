@@ -186,6 +186,10 @@ h4 {
   margin: auto;
   padding: 0px; }
 
+.rounded-circle {
+  width: 350px;
+  height: 350px; }
+
 .presupuesto {
   width: 300px;
   height: 320px;
@@ -229,7 +233,7 @@ h4 {
 
 .media {
   margin: auto;
-  padding: 5px; }
+  padding: 10px; }
 
 .text-media {
   width: auto;
@@ -351,10 +355,10 @@ h4 {
     padding: 0px; }
   .d-flex {
     border-radius: 3px;
-    width: 250px;
+    width: 350px;
     height: auto; }
   .overlay {
-    width: 250px;
+    width: 290px;
     height: 0px;
     position: absolute;
     bottom: 100%;
@@ -375,16 +379,33 @@ h4 {
     width: auto;
     text-align: center;
     color: white;
-    padding: 0px;
+    padding: 5px;
     margin: 0px;
-    font-size: 10px; }
+    font-size: 13px; }
+  .rounded-circle {
+    width: 200px;
+    height: 200px; }
+  .h3__media {
+    color: white;
+    text-align: start;
+    background: transparent;
+    position: relative;
+    animation: mymove 5s infinite;
+    padding: 0px;
+    margin: auto;
+    font-size: 20px; }
+  @keyframes mymove {
+    from {
+      left: 0px; }
+    to {
+      left: 15px; } }
   .galeria {
-    width: 133px;
-    height: 150px;
+    width: 60px;
+    height: 65px;
     padding: 5px;
     margin: auto; }
   .galeria__2 {
-    width: 200px;
+    width: 300px;
     height: auto;
     background-color: black;
     margin: auto;
