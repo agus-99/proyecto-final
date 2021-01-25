@@ -1,17 +1,3 @@
-@media (max-width: 768px) {
-  .section__img {
-    width: 400px;
-    height: 700px; }
-  .center {
-    position: absolute;
-    top: 20%;
-    left: 100px; }
-  .h1__rosa {
-    font-family: 'Abril Fatface', cursive;
-    color: #ffbbb4;
-    font-size: 12px;
-    padding: 0px; } }
-
 body {
   font-family: "Bebas Neue", cursive;
   background-color: #222831;
@@ -213,7 +199,7 @@ h4 {
 .d-flex {
   border-radius: 3px;
   width: 500px;
-  height: 280px; }
+  height: 300px; }
 
 .overlay {
   width: 500px;
@@ -316,3 +302,44 @@ h4 {
 .footer__p {
   color: white;
   font-size: 16px; }
+
+@media (max-width: 575.98px) {
+  .nav__center {
+    color: red; }
+  .container__h1 {
+    width: 100%;
+    height: 100%; }
+  .section__img {
+    width: 100%;
+    height: 100%;
+    margin: auto; }
+  .center {
+    position: absolute;
+    top: 20%;
+    left: 40px; }
+  .h1__rosa {
+    font-family: 'Abril Fatface', cursive;
+    color: #ffbbb4;
+    font-size: 50px;
+    padding: 0px; }
+  .p__index {
+    font-size: 15px;
+    text-decoration: overline;
+    padding: 5px;
+    margin: auto; }
+  .d-flex {
+    border-radius: 3px;
+    width: 150px;
+    height: 200px; }
+  .h2__media {
+    margin: 10px;
+    color: white;
+    font-family: "Bebas Neue", cursive;
+    font-size: 20px; }
+  .text-media {
+    width: auto;
+    text-align: center;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    font-size: 10px; } }

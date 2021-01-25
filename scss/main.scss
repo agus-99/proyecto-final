@@ -1,6 +1,5 @@
 @import "colors";
 @import "variables";
-@import "media";
 body { font-family: $fontFamily;
        background-color: $backColor;
        height: auto;
@@ -161,7 +160,7 @@ h4{ @include fsize(20px);
                     width: 50%;
 }
 .d-flex { border-radius: 3px;
-         @include sizes (500px, 280px);
+         @include sizes (500px, 300px);
 }
 .overlay { @include sizes (500px, 0px);
            position: absolute;
@@ -250,4 +249,45 @@ h4{ @include fsize(20px);
 }
 .footer__p { color: $white;
             @include fsize (16px);
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .nav__center { color: red;
+    }
+    .container__h1 { @include sizes (100%,100%);
+
+    }
+    .section__img { @include sizes(100%, 100%);
+                    margin: auto;
+    }
+    .center{ position: absolute;  
+             top: 20%;
+             left: 40px;
+    }
+    .h1__rosa{ font-family: 'Abril Fatface', cursive; 
+               color: $pink;
+               @include fsize (50px);
+               padding: 0px;
+            }
+    .p__index { @include fsize (15px);
+                text-decoration: overline;
+                padding: 5px;
+                margin: auto;
+    }
+    .d-flex { border-radius: 3px;
+             @include sizes (150px,200px);
+            }
+    .h2__media { margin: 10px;
+                 color: $white;
+                 font-family: $fontFamily;
+                 @include fsize (20px);
+            }
+    .text-media { width: auto;
+                  text-align: center;
+                  color: white;
+                  padding: 0px;
+                  margin: 0px;
+                  @include fsize (10px);
+  }
+
 }
