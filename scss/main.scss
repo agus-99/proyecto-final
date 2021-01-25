@@ -255,14 +255,13 @@ h4{ @include fsize(20px);
     .nav__center { color: red;
     }
     .container__h1 { @include sizes (100%,100%);
-
-    }
-    .section__img { @include sizes(100%, 100%);
-                    margin: auto;
     }
     .center{ position: absolute;  
-             top: 20%;
+             top: 40%;
              left: 40px;
+    }
+    .section__img { @include sizes (100%,100%);
+
     }
     .h1__rosa{ font-family: 'Abril Fatface', cursive; 
                color: $pink;
