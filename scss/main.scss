@@ -76,9 +76,9 @@ h1 { @include transform (capitalize);
      padding: 5px;
 }
 .h1__rosa{ font-family: 'Abril Fatface', cursive; 
-    color: $pink;
-    @include fsize (120px);
-    padding: 0px;
+           color: $pink;
+           @include fsize (120px);
+           padding: 0px;
 } 
 h2 { @include transform(capitalize);
      @include fsize(40px);

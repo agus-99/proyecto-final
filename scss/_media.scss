@@ -1,11 +1,13 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 768px) {
-    .center {
-        background-color:blue;
-        @include sizes (auto, auto);
-        position: absolute;
+    .section__img { @include sizes(400px, 700px);
     }
-    .h1__rosa { background-color: red;
-
-    }
+    .center{ position: absolute;  
+             top: 20%;
+             left: 100px;}
+             .h1__rosa{ font-family: 'Abril Fatface', cursive; 
+                color: $pink;
+                @include fsize (12px);
+                padding: 0px;
+     }
 }

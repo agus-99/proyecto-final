@@ -1,11 +1,16 @@
 @media (max-width: 768px) {
+  .section__img {
+    width: 400px;
+    height: 700px; }
   .center {
-    background-color: blue;
-    width: auto;
-    height: auto;
-    position: absolute; }
+    position: absolute;
+    top: 20%;
+    left: 100px; }
   .h1__rosa {
-    background-color: red; } }
+    font-family: 'Abril Fatface', cursive;
+    color: #ffbbb4;
+    font-size: 12px;
+    padding: 0px; } }
 
 body {
   font-family: "Bebas Neue", cursive;
