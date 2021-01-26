@@ -2,6 +2,7 @@
 @media (max-width: 575.98px) {
 .back-mobile {display: block;
              @include sizes ($widthMax,576px);
+             background-size: cover;
 }
 .section__img {display: none;
 }
@@ -119,6 +120,7 @@ h1 { @include transform (capitalize);
 .back-mobile {display: block;
               @include sizes ($widthMax,100%);
               margin: auto;
+              background-size: cover;
 }
 .section__img {display: none;
 }
@@ -234,6 +236,7 @@ h1 { @include transform (capitalize);
 @media (min-width: 768px) and (max-width: 991.98px) {
 .back-mobile {display:block;
               @include sizes ($widthMax,100%);
+              background-size: cover;
 }
 .section__img {display: none;
     }
@@ -349,6 +352,7 @@ h1 { @include transform (capitalize);
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .back-mobile {display: block;
                   @include sizes ($widthMax,100%);
+                  background-size: cover;
     }
     .section__img { display: none;
     }
