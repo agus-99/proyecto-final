@@ -310,9 +310,10 @@ h4{ @include fsize(20px);
               padding: 0px;
             }
     .d-flex { border-radius: 3px;
-             @include sizes (350px ,auto);
+             @include sizes (370px, 300px);
+             padding: 5px;
             }
-    .overlay { @include sizes (350px, 0px);
+    .overlay { @include sizes (380px, 0px);
                 position: absolute;
                 bottom: 100%;
                 left: 0;
@@ -351,20 +352,21 @@ h4{ @include fsize(20px);
            from {left: 0px;}
            to {left: 15px;}
        }
-    .galeria { @include sizes (150px, 150px);
-               padding: 3px;
+    .galeria { @include sizes (185px, 220px);
+               padding: 5px;
                margin: auto;
+
             }
     .galeria__2 { @include sizes (300px, auto);
-                background-color: black;
-                margin: auto;
-                padding: 0px;
+                  background-color: black;
+                  margin: auto;
+                  padding: 0px;
             }
     .basic { @include fsize (30px);
-           padding: 0px;
+             padding: 0px;
         }
     .card {@include sizes (350px,auto);
-          margin: auto;
+            margin: auto;
         }
     .card-text { @include fsize (15px);
     }
