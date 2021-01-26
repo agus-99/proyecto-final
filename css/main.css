@@ -327,7 +327,7 @@ h4 {
   .back-mobile {
     display: block;
     width: 100%;
-    height: 100%; }
+    height: 576px; }
   .section__img {
     display: none; }
   .nav__a__index {
@@ -344,7 +344,7 @@ h4 {
   .h1__rosa {
     font-family: 'Abril Fatface', cursive;
     color: #ffbbb4;
-    font-size: 50px; }
+    font-size: 45px; }
   .p__index {
     font-size: 15px;
     text-decoration: overline;
@@ -352,7 +352,7 @@ h4 {
     margin: auto; }
   h1 {
     text-transform: capitalize;
-    font-size: 40px;
+    font-size: 50px;
     color: white;
     text-align: center;
     font-family: "Bebas Neue", cursive;
@@ -366,12 +366,11 @@ h4 {
     justify-content: center;
     justify-items: center;
     margin: auto;
-    padding: 0px; }
+    padding: 1px; }
   .d-flex {
     border-radius: 3px;
-    width: 370px;
-    height: 300px;
-    padding: 5px; }
+    width: 320px;
+    height: auto; }
   .overlay {
     width: 380px;
     height: 0px;
@@ -396,7 +395,7 @@ h4 {
     color: white;
     padding: 5px;
     margin: 0px;
-    font-size: 13px; }
+    font-size: 12px; }
   .rounded-circle {
     width: 200px;
     height: 200px; }
@@ -408,16 +407,18 @@ h4 {
     animation: mymove 5s infinite;
     padding: 0px;
     margin: auto;
-    font-size: 20px; }
+    font-size: 30px; }
   @keyframes mymove {
     from {
       left: 0px; }
     to {
       left: 15px; } }
+  .margin__galeria {
+    margin: 25px; }
   .galeria {
-    width: 185px;
-    height: 220px;
-    padding: 5px;
+    width: 160px;
+    height: 180px;
+    padding: 3px;
     margin: auto; }
   .galeria__2 {
     width: 300px;
@@ -445,5 +446,131 @@ h4 {
     padding: 0px; }
   .presupuesto {
     width: 350px;
+    height: 350px;
+    padding: 0px; } }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .back-mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto; }
+  .section__img {
+    display: none; }
+  .navbar {
+    width: 100%; }
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    margin: auto;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.534);
+    width: 100%; }
+  .h1__rosa {
+    font-family: 'Abril Fatface', cursive;
+    color: #ffbbb4;
+    font-size: 70px; }
+  .p__index {
+    font-size: 20px;
+    text-decoration: overline;
+    padding: 5px;
+    margin: auto; }
+  h1 {
+    text-transform: capitalize;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: normal;
+    padding: 4px; }
+  .grid__2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    padding: 1px; }
+  .d-flex {
+    border-radius: 3px;
+    width: 550px;
+    height: auto; }
+  .overlay {
+    width: 550px;
+    height: 0px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.212);
+    overflow: hidden;
+    transition: .5s ease; }
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%; }
+  .h2__media {
+    margin: 0px;
+    color: white;
+    font-family: "Bebas Neue", cursive;
+    font-size: 40px; }
+  .text-media {
+    width: auto;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    margin: auto;
+    font-size: 12px; }
+  .rounded-circle {
+    width: 200px;
+    height: 200px; }
+  .h3__media {
+    color: white;
+    text-align: start;
+    background: transparent;
+    position: relative;
+    animation: mymove 5s infinite;
+    padding: 0px;
+    margin: auto;
+    font-size: 25px; }
+  @keyframes mymove {
+    from {
+      left: 0px; }
+    to {
+      left: 15px; } }
+  .margin__galeria {
+    margin: 25px; }
+  .galeria {
+    width: 250px;
+    height: 280px;
+    padding: 5px;
+    margin: auto; }
+  .galeria__2 {
+    width: 400px;
+    height: auto;
+    background-color: black;
+    margin: auto;
+    padding: 0px; }
+  .basic {
+    font-size: 20px;
+    padding: 0px; }
+  .card {
+    width: 200px;
+    height: auto;
+    margin: auto; }
+  .card-text {
+    font-size: 15px; }
+  .grid__5 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    margin: 0px;
+    padding: 0px; }
+  .presupuesto {
+    width: 300px;
     height: 350px;
     padding: 0px; } }
