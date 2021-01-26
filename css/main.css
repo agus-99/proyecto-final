@@ -5,7 +5,10 @@ body {
 
 .navbar {
   background-color: transparent;
-  text-align: start; }
+  text-align: center; }
+
+.navbar-toggler {
+  color: white; }
 
 .nav__a {
   font-size: 13px;
@@ -170,6 +173,9 @@ h4 {
   text-align: center;
   padding: 0px; }
 
+.back-mobile {
+  display: none; }
+
 .galeria {
   padding: 5px;
   width: 300px;
@@ -191,8 +197,8 @@ h4 {
   height: 350px; }
 
 .presupuesto {
-  width: 300px;
-  height: 320px;
+  width: 350px;
+  height: 370px;
   border-radius: 15px 50px; }
 
 .container__media {
@@ -240,11 +246,12 @@ h4 {
   text-align: center;
   color: white;
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+  text-transform: capitalize; }
 
 .card {
-  width: 300px;
-  height: 500px;
+  width: auto;
+  height: auto;
   background-color: transparent;
   margin: auto;
   text-align: center; }
@@ -317,20 +324,27 @@ h4 {
   font-size: 16px; }
 
 @media (max-width: 575.98px) {
-  .nav__center {
-    color: red; }
+  .back-mobile {
+    display: block;
+    width: 100%;
+    height: 100%; }
+  .section__img {
+    display: none; }
+  .nav__a__index {
+    color: white; }
   .container__h1 {
     width: 100%;
     height: 100%; }
   .center {
     position: absolute;
-    top: 40%;
-    left: 40px; }
+    top: 45%;
+    left: 40px;
+    margin: 0px;
+    padding: 0px; }
   .h1__rosa {
     font-family: 'Abril Fatface', cursive;
     color: #ffbbb4;
-    font-size: 50px;
-    padding: 0px; }
+    font-size: 50px; }
   .p__index {
     font-size: 15px;
     text-decoration: overline;
@@ -358,7 +372,7 @@ h4 {
     width: 350px;
     height: auto; }
   .overlay {
-    width: 290px;
+    width: 350px;
     height: 0px;
     position: absolute;
     bottom: 100%;
@@ -411,14 +425,14 @@ h4 {
     margin: auto;
     padding: 0px; }
   .basic {
-    font-size: 25px;
+    font-size: 30px;
     padding: 0px; }
   .card {
-    width: 250px;
+    width: 350px;
     height: auto;
     margin: auto; }
   .card-text {
-    font-size: 12px; }
+    font-size: 15px; }
   .grid__5 {
     display: grid;
     grid-template-columns: auto;
@@ -429,6 +443,6 @@ h4 {
     margin: 0px;
     padding: 0px; }
   .presupuesto {
-    width: 250px;
-    height: 260px;
+    width: 350px;
+    height: 350px;
     padding: 0px; } }

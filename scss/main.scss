@@ -5,7 +5,10 @@ body { font-family: $fontFamily;
        height: auto;
 }
 .navbar { background-color:transparent;
-          text-align: start; 
+          text-align: center; 
+}
+.navbar-toggler { color: white;
+
 }
 .nav__a { @include fsize (13px);
           color:white;
@@ -26,6 +29,7 @@ body { font-family: $fontFamily;
 .nav__a__index:hover { color:$white;
 }
 .nav__center { position: absolute;
+
 }
 .section__img { @include sizes($widthMax, auto);
 }
@@ -44,7 +48,7 @@ body { font-family: $fontFamily;
 .margin__galeria { margin: 25px;
 }
 p { @include fsize ($lettersize);
-    @include transform(capitalize);
+    @include transform (capitalize);
     color: $letterColor;
     font-family: $familyRoboto;
     text-decoration: none;
@@ -141,6 +145,7 @@ h4{ @include fsize(20px);
          text-align: center;
          padding: 0px;
 }
+.back-mobile {display: none;}
 .galeria { padding: 5px;
            @include sizes (300px, 360px);
 }
@@ -154,7 +159,7 @@ h4{ @include fsize(20px);
 }
 .rounded-circle { @include sizes (350px,350px);
 }
-.presupuesto { @include sizes(300px,320px);
+.presupuesto { @include sizes(350px,370px);
                border-radius: 15px 50px;
 }
 .container__media { position: relative;
@@ -194,8 +199,9 @@ h4{ @include fsize(20px);
               color: white;
               padding: 0px;
               margin: 0px;
+              @include transform (capitalize);
 }
-.card  { @include sizes (300px,500px);
+.card  { @include sizes (auto,auto);
          background-color:transparent;
          margin:auto;
          text-align: center;
@@ -262,18 +268,24 @@ h4{ @include fsize(20px);
 }
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    .nav__center { color: red;
+    .back-mobile { display: block;
+                   @include sizes ($widthMax,100%);
+    }
+    .section__img {display: none;
+    }
+    .nav__a__index {color:white;
     }
     .container__h1 { @include sizes (100%,100%);
     }
     .center{ position: absolute;  
-             top: 40%;
+             top: 45%;
              left: 40px;
+             margin: 0px;
+             padding: 0px;
     }
     .h1__rosa{ font-family: 'Abril Fatface', cursive; 
                color: $pink;
                @include fsize (50px);
-               padding: 0px;
             }
     .p__index { @include fsize (15px);
                 text-decoration: overline;
@@ -300,7 +312,7 @@ h4{ @include fsize(20px);
     .d-flex { border-radius: 3px;
              @include sizes (350px ,auto);
             }
-    .overlay { @include sizes (290px, 0px);
+    .overlay { @include sizes (350px, 0px);
                 position: absolute;
                 bottom: 100%;
                 left: 0;
@@ -348,13 +360,13 @@ h4{ @include fsize(20px);
                 margin: auto;
                 padding: 0px;
             }
-    .basic { @include fsize (25px);
+    .basic { @include fsize (30px);
            padding: 0px;
         }
-    .card {@include sizes (250px,auto);
+    .card {@include sizes (350px,auto);
           margin: auto;
         }
-    .card-text { @include fsize (12px);
+    .card-text { @include fsize (15px);
     }
     .grid__5 { display: grid;
              grid-template-columns: auto;
@@ -365,7 +377,7 @@ h4{ @include fsize(20px);
              margin:0px;
              padding: 0px;
             }
-    .presupuesto { @include sizes (250px,260px);
+    .presupuesto { @include sizes (350px,350px);
                     padding: 0px;
 
      }
