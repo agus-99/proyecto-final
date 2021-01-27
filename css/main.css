@@ -35,6 +35,9 @@ body {
 .nav__center {
   position: absolute; }
 
+.container__h1 {
+  position: absolute; }
+
 .section__img {
   width: 100%;
   height: auto;
@@ -334,9 +337,6 @@ h4 {
     display: none; }
   .nav__a__index {
     color: white; }
-  .container__h1 {
-    width: 100%;
-    height: 100%; }
   .center {
     position: absolute;
     top: 45%;

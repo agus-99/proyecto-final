@@ -29,7 +29,8 @@ body { font-family: $fontFamily;
 .nav__a__index:hover { color:$white;
 }
 .nav__center { position: absolute;
-
+}
+.container__h1 {position: absolute;
 }
 .section__img { @include sizes ($widthMax, auto);
                 display: block;
