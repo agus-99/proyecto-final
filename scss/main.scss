@@ -31,10 +31,11 @@ body { font-family: $fontFamily;
 .nav__center { position: absolute;
 }
 .section__img { @include sizes ($widthMax, 100%);
+                display: block;
 }
 .center{ position: absolute;  
-    top: 45%;
-    left: 250px;
+         top: 45%;
+         left: 250px;
 }
 .fab { color: $white;
 }
