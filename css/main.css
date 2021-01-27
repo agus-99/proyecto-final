@@ -37,7 +37,8 @@ body {
 
 .section__img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  display: block; }
 
 .center {
   position: absolute;

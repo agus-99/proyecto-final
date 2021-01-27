@@ -32,6 +32,7 @@ body { font-family: $fontFamily;
 
 }
 .section__img { @include sizes ($widthMax, auto);
+                display: block;
 }
 .center{ position: absolute;  
          top: 45%;
