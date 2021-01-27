@@ -32,12 +32,6 @@ body {
 .nav__a__index:hover {
   color: white; }
 
-.nav__center {
-  position: absolute; }
-
-.container__h1 {
-  position: absolute; }
-
 .section__img {
   width: 100%;
   height: auto; }
