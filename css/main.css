@@ -40,13 +40,7 @@ body {
 
 .section__img {
   width: 100%;
-  height: auto;
-  display: block; }
-
-.center {
-  position: absolute;
-  top: 45%;
-  left: 250px; }
+  height: auto; }
 
 .fab {
   color: white; }

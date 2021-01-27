@@ -33,12 +33,8 @@ body { font-family: $fontFamily;
 .container__h1 {position: absolute;
 }
 .section__img { @include sizes ($widthMax, auto);
-                display: block;
 }
-.center{ position: absolute;  
-         top: 45%;
-         left: 250px;
-}
+
 .fab { color: $white;
 }
 .fab:hover {color: $pink;
