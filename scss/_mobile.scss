@@ -4,7 +4,7 @@
              @include sizes ($widthMax,576px);
              background-size: cover;
 }
-.section__img {display: none;
+.section__img {display: block;
 }
 .nav__a__index {color:white;
 }
@@ -123,7 +123,7 @@ h1 { @include transform (capitalize);
               margin: auto;
               background-size: cover;
 }
-.section__img {display: none;
+.section__img {display: block;
 }
 .navbar { width: 100%;
 }
@@ -239,7 +239,7 @@ h1 { @include transform (capitalize);
               @include sizes ($widthMax,100%);
               background-size: cover;
 }
-.section__img {display: none;
+.section__img {display: inline;
     }
 .center{ position: absolute;  
          top: 400px;
@@ -355,7 +355,7 @@ h1 { @include transform (capitalize);
                   @include sizes ($widthMax,100%);
                   background-size: cover;
     }
-    .section__img { display: none;
+    .section__img { display: inline;
     }
     .center{ position: absolute;  
              top: 500px;

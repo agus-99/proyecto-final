@@ -28,7 +28,13 @@ body { font-family: $fontFamily;
 }
 .nav__a__index:hover { color:$white;
 }
+.nav__center { position: absolute;
+}
 .section__img { @include sizes ($widthMax, 100%);
+}
+.center{ position: absolute;  
+    top: 45%;
+    left: 250px;
 }
 .fab { color: $white;
 }
