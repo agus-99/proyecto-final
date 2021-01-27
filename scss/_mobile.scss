@@ -114,6 +114,9 @@ h1 { @include transform (capitalize);
 .presupuesto { @include sizes (350px,350px);
                padding: 0px;
 }
+.footer__p { @include fsize (10px);
+
+}
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {

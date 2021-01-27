@@ -37,8 +37,7 @@ body {
 
 .section__img {
   width: 100%;
-  height: auto;
-  display: block; }
+  height: auto; }
 
 .center {
   position: absolute;
@@ -449,7 +448,9 @@ h4 {
   .presupuesto {
     width: 350px;
     height: 350px;
-    padding: 0px; } }
+    padding: 0px; }
+  .footer__p {
+    font-size: 10px; } }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .back-mobile {
