@@ -28,9 +28,8 @@ body { font-family: $fontFamily;
 }
 .nav__a__index:hover { color:$white;
 }
-.section__img { @include sizes ($widthMax, auto);
+.section__img { @include sizes ($widthMax, 100%);
 }
-
 .fab { color: $white;
 }
 .fab:hover {color: $pink;
